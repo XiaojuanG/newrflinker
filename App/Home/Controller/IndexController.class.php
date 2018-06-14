@@ -130,10 +130,13 @@ class IndexController extends ComController {
 		$data['mtime'] = date("Y-m-d h:i:s");
 		
 		$message->add($data);
-
+               
 		if($emailtrue){
-			echo 1;
-			echo $date;
+			$data=[
+                            'code'=>1
+                        ];
+                         
+			echo json_encode($data);exit;
 		}
 		
 	}

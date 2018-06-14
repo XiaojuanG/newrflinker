@@ -59,8 +59,8 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="<?php echo U('Index/Index');?>">          <img src="/rflinker/Public/qiantai/img/login.png">        </a> </div>
             <script>
-            window.__arr__ = { $new_live };
-            window.__arr2__ = { $new_live_all };
+            window.__arr__ = <?php echo ($new_live); ?>;
+            window.__arr2__ = <?php echo ($new_live_all); ?>;
             </script>
             <div class="form-group form-group-mobile visible-xs">
                 <input type="text" id="mobilearrcity" class="form-control" style="font-size:13px;" placeholder="<?php echo (L("head_search_select")); ?>">
@@ -302,6 +302,70 @@
 	            },	      
 			});
   </script>
+  <script>
+$(function() {
+    function checkUserName(username){
+        if ((/^[\u4E00-\u9FA5A-Za-z]+$/.test(username))) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    function checkMobile(mobile) { 
+    	if ((/^1[3|4|5|6|7|8]\d{9}$/.test(mobile))) { return true; } else { return false; } }
+	function isEmail(str) { 
+		if ((/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(str))) { return true; } else { return false; } } 
+	// 联系我们
+    $('.matter-button').on('click', function() {
+    	var requestData = {
+    	    matter:$('.matter').val(),
+    	    username:$('.username').val(),
+    	    userphone:$('.userphone').val(),
+    	    useremail:$('.useremail').val(),
+    	    matterconter:$('.matterconter').val()
+    	} 
+    	var valid = true;       
+    	if(valid && requestData.matter == ''){ 
+    	    valid = false; 
+    	    var tips = $(".matter").attr("data-foolish-msg");            
+    	    $(".matter").focus();
+    	    }        
+    	    if(valid && !checkUserName(requestData.username) ){ valid=false; var tips=$ ( ".username").attr( "data-foolish-msg"); $( ".username").focus(); } 
+    	    if(valid && !checkMobile(requestData.userphone)){ var tips=$ ( ".userphone").attr( "data-foolish-msg"); $( ".userphone").focus(); valid=false; } 
+    	    if(valid && !isEmail(requestData.useremail)){ var tips=$ ( ".useremail").attr( "data-foolish-msg"); $( ".useremail").focus(); valid=false; } 
+    	    if(valid && requestData.matterconter.length <=0 ){ valid=false; var tips=$ ( ".matterconter").attr( "data-foolish-msg"); $( ".matterconter").focus(); }					
+    	    	//问题		
+            	var SelectType = requestData.matter;		//提问姓名		
+            	var UserName = requestData.username;		//提问电话		
+            	var UserTel = requestData.userphone;		//提问邮箱		
+            	var UserMail = requestData.useremail;		//提问内容		
+            	var TextSay = requestData.matterconter;		        
+            	if(valid){                    
+            		$.ajax({							
+            			type:"POST",							
+            			url:"<?php echo U('Index/email');?>",							
+            			dataType: "json",							
+            			data:{"SelectType":SelectType,"UserName":UserName,"UserTel":UserTel,"UserMail":UserMail,"TextSay":TextSay},							
+            			success: function(data){                                 
+            				if(data.code == 1){							   									       layer.open({											  
+            			content: '<?php echo (L("index_Formtijiaotrue")); ?>'
+            			,skin: 'msg'												
+            			,time: 2 //2秒后自动关闭	
+            			});
+                                window.location.href=window.location.href;
+            			}										
+            			}			                     
+            			});        
+            			}else{            
+            			layer.open({                  
+            			content: tips                  
+            			,skin: 'msg'                  
+            			,time: 2 //2秒后自动关闭
+            		});        
+            		}	
+            	});	    	
+})
+</script>
 		
 		
 	</body>

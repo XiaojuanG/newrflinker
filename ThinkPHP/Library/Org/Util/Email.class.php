@@ -46,9 +46,9 @@
 							$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 							if(!$mail->send()) {
-								echo false;
+							        return false;
 							} else {
-								echo true;
+								return true;
 							}
 			}
 			
