@@ -14,7 +14,7 @@ $(function() {
 	    }
 	}
 	function isEmail(str){
-	    if ((/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(str))){
+	    if ((/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(str))){
 	        return true;
 	    }else{
 	        return false;
