@@ -1,0 +1,52 @@
+@charset "utf-8";
+html,
+body {
+	font-family: "Microsoft YaHei";
+}
+
+body {
+	padding-top: 50px;
+}
+ol,ul{list-style: none;}
+a,a:hover, a:focus{text-decoration: none;}
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@-webkit-keyframes bounce {
+  0%,100%{
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    margin-top:0px;
+  }
+
+  50% {
+    -webkit-animation-timing-function:ease-in;
+    animation-timing-function: ease-in;
+    margin-top:-10px;
+  }
+  90% {
+    margin-top:-2px;
+  }
+}
+
+@keyframes bounce {
+  0%,100%{
+    -webkit-animation-timing-function:ease-in;
+    animation-timing-function:ease-in;
+    margin-top:0px;
+  }
+
+  50% {
+    -webkit-animation-timing-function:ease-in;
+    animation-timing-function:ease-in;
+    margin-top:-10px;
+  }
+
+  90% {
+    margin-top:-2px;
+  }
+}
+h2{text-shadow: 0px 3px 2px #dedede;}
+.mo-re{ margin:30px auto; font-size:20px; text-align: center;}
+.mo-re p{border:1px solid #4598E3; padding:5px 15px;  display: inline-block; height: 39px; overflow: hidden;}
+.mo-re a{transform: translateY(0px); display: inline-block; transition:all 0.2s ease-out;}
+.mo-re a:hover{transform: translateY(-29px);}
+/*-------------------公共部分结束------------------------*/

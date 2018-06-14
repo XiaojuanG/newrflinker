@@ -1,0 +1,125 @@
+<!--联系我们-->
+<div class="contact-us col-xs-12" style="background:#fff;">
+    <div class="container">
+        <div class="row">
+            <div class="common-title">
+                <h2>—— {$Think.lang.index_FormTitle}  ——</h2> </div>
+            <div class="col-lg-6 col-md-6">
+                <p class="font-title">{$Think.lang.index_PleseEmail}</p>
+                <div>
+                    <form class="">
+                        <div class="form-group">
+                            <select class="form-control matter" placeholder="{$Think.lang.index_PleseQuestion}" data-foolish-msg="{$Think.lang.index_PleseQuestion}">
+                                <option value="">{$Think.lang.index_PleseQuestion}</option>
+                                <option value="1">{$Think.lang.index_FormProblemyi}</option>
+                                <option value="2">{$Think.lang.index_FormProblemer}</option>
+                            </select>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-lg-3 col-md-3">
+                                <label class="sr-only" for="name">name</label>
+                                <input type="text" class="form-control username" id="name" placeholder="{$Think.lang.index_FormName}" data-foolish-msg="{$Think.lang.index_FormIsName}"> </div>
+                            <div class="col-lg-3 col-md-3">
+                                <label class="sr-only" for="phone">phone</label>
+                                <input type="text" class="form-control userphone" id="phone" placeholder="{$Think.lang.index_FormTel}" data-foolish-msg="{$Think.lang.index_FormIsTel}"> </div>
+                            <div class="col-lg-6 col-md-6">
+                                <label class="sr-only" for="InputEmail">Email address</label>
+                                <input type="email" class="form-control useremail" id="InputEmail" placeholder="{$Think.lang.index_FormEmail}" data-foolish-msg="{$Think.lang.index_FormIsEmail}"> </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control matterconter" rows="10" placeholder="{$Think.lang.index_FormContent}" data-foolish-msg="{$Think.lang.index_FormContent}"></textarea>
+                        </div>
+                        <button type="button" class="font-index-btn matter-button">{$Think.lang.index_FormSubmit}</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 qr-code">
+                <p class="font-title">{$Think.lang.index_Saoma}</p>
+                <div> <img src="__PUBLIC__/qiantai/img/qr-code.png"> </div>
+                <div>
+                    <p class="font-phone">{$Think.lang.index_FormTel}:</p>
+                    <p class="phone-num">139-1899-9394</p>
+                    <p class="font-phone">{$Think.lang.index_Address}:</p>
+                    <p class="font-address">{$Think.lang.bottom_address}</p>
+                    <p class="font-phone">{$Think.lang.emailname}:</p>
+                    <p class="font-address">13918999394@163.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="col-xs-12">
+    <div class="footer">
+        <div class="font-footer">{$Think.lang.ICPname}</div>
+    </div>
+</footer>
+</div>
+</main>
+<script type="text/javascript" src="__PUBLIC__/qiantai/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/qiantai/js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/qiantai/search_demo/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/qiantai/js/nav.js"></script>
+<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+<script type="text/javascript" src="__PUBLIC__/qiantai/iostopfixed/scrollfix.js"></script>
+<script src="__PUBLIC__/qiantai/js/main.js"></script>
+<!--		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js">--></script>
+<!-- 搜索预览插件 -->
+<script type="text/javascript" src="__PUBLIC__/qiantai/search_demo/aircity.js"></script>
+<script src="__PUBLIC__/qiantai/layer/mobile/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/qiantai/js/connectUs.js"></script>
+<script>
+$(function() {
+    function checkMobile(mobile) { 
+    	if ((/^1[3|4|5|6|7|8]\d{9}$/.test(mobile))) { return true; } else { return false; } }
+	function isEmail(str) { 
+		if ((/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(str))) { return true; } else { return false; } } 
+	// 联系我们
+    $('.matter-button').on('click', function() {
+    	var requestData = {
+    	    matter:$('.matter').val(),
+    	    username:$('.username').val(),
+    	    userphone:$('.userphone').val(),
+    	    useremail:$('.useremail').val(),
+    	    matterconter:$('.matterconter').val()
+    	} 
+    	var valid = true;       
+    	if(valid && requestData.matter == ''){ 
+    	    valid = false; 
+    	    var tips = $(".matter").attr("data-foolish-msg");            
+    	    $(".matter").focus();
+    	    }        
+    	    if(valid && !checkUserName(requestData.username) ){ valid=false; var tips=$ ( ".username").attr( "data-foolish-msg"); $( ".username").focus(); } 
+    	    if(valid && !checkMobile(requestData.userphone)){ var tips=$ ( ".userphone").attr( "data-foolish-msg"); $( ".userphone").focus(); valid=false; } 
+    	    if(valid && !isEmail(requestData.useremail)){ var tips=$ ( ".useremail").attr( "data-foolish-msg"); $( ".useremail").focus(); valid=false; } 
+    	    if(valid && requestData.matterconter.length <=0 ){ valid=false; var tips=$ ( ".matterconter").attr( "data-foolish-msg"); $( ".matterconter").focus(); }					
+    	    	//问题		
+            	var SelectType = requestData.matter;		//提问姓名		
+            	var UserName = requestData.username;		//提问电话		
+            	var UserTel = requestData.userphone;		//提问邮箱		
+            	var UserMail = requestData.useremail;		//提问内容		
+            	var TextSay = requestData.matterconter;		        
+            	if(valid){                    
+            		$.ajax({							
+            			type:"POST",							
+            			url:"{:U('Index/email')}",							
+            			dataType: "json",							
+            			data:{"SelectType":SelectType,"UserName":UserName,"UserTel":UserTel,"UserMail":UserMail,"TextSay":TextSay},							
+            			success: function(data){                                 
+            				if(data == 1){							   									       layer.open({											  
+            			content: '{$Think.lang.index_Formtijiaotrue}'
+            			,skin: 'msg'												
+            			,time: 2 //2秒后自动关闭	
+            			});					 								 
+            			}										
+            			}			                     
+            			});        
+            			}else{            
+            			layer.open({                  
+            			content: tips                  
+            			,skin: 'msg'                  
+            			,time: 2 //2秒后自动关闭
+            		});        
+            		}	
+            	});	    	
+})
+</script>

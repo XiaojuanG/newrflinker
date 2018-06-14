@@ -1,0 +1,43 @@
+<main class="max-width-index">
+    <!--导航-->
+    <nav class="navbar navbar-default navbar-fixed-top top-box">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="{:U('Index/Index')}">          <img src="__PUBLIC__/qiantai/img/login.png">        </a> </div>
+            <script>
+            window.__arr__ = { $new_live };
+            window.__arr2__ = { $new_live_all };
+            </script>
+            <div class="form-group form-group-mobile visible-xs">
+                <input type="text" id="mobilearrcity" class="form-control" style="font-size:13px;" placeholder="{$Think.lang.head_search_select}">
+                <div id='mobilesuggest' class="mobileac_results"></div>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left top-nav">
+                    <li id="nav_toggle" style="line-height: 60px;width: 140px;text-align: center;margin-right: 10px"> <a href="{:U('')}?lang=ch-cn{$commom_field}" class=" nav_toggle {$Think.lang.languagesclicks}" style="display: inline;float: left;">中文</a>| <a href="{:U('')}?lang=en-us{$commom_field}" class="nav_toggle {$Think.lang.languagesclick}" style="display: inline;float: right;">EN</a> </li>
+                    <li <if condition="$style_change eq Index">class="active"</if>> <a href="{:U('Index/Index')}" class="China">              {$Think.lang.head_index}              <span class="sr-only">(current)</span>            </a> </li>
+                    <li class="dropdown "> <a class="dropdown-toggle China hidden-xs" data-toggle="dropdown" href="{:U('Rflinker/Index')}">{$Think.lang.title_Product}</a>
+                        <ul class="dropdown-menu" id="dropdown">
+                            <li><a class="nav-dropdown-menu-li" href="{:U('Rflinker/Index')}">Rflinker</a></li>
+                            <li><a class="nav-dropdown-menu-li" href="{:U('Feig/Index')}">Feig</a></li>
+                        </ul>
+                    </li>
+                    <li class="visible-xs China"><a href="{:U('Rflinker/Index')}">Rflinker</a></li>
+                    <li class="visible-xs China"><a href="{:U('Feig/Index')}">Feig</a></li>
+                    <li <if condition="$style_change eq Vocationlist">class="active"</if>> <a class="China" href="{:U('Vocationlist/Index')}">{$Think.lang.head_Industry}</a> </li>
+                    <li <if condition="$style_change eq Codeinput">class="active"</if>> <a class="China" href="{:U('Codeinput/Index')}">{$Think.lang.head_support}</a> </li>
+                    <li <if condition="$style_change eq Aboutus">class="active"</if>> <a class="China" href="{:U('Aboutus/Index')}">{$Think.lang.head_about}</a> </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right top-nav" style="width: 300px;">
+                    <li class="search_c hidden-sm hidden-xs"> <a href="#">{$Think.lang.head_search} <i class="glyphicon glyphicon-search"></i></a> </li>
+                    <form class="hidden-sm hidden-xs">
+                        <input style="font-size:13px;" placeholder="{$Think.lang.head_search_select}" type="text" name="arrcity" id="arrcity" class="form-control search" />
+                        <div id='suggest' class="ac_results"></div>
+                    </form>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--/ 导航-->

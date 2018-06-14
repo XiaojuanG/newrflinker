@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<!--忽略页面中的数字识别为电话，忽略email识别-->
+		<meta name="format-detection" content="telphone=no, email=no" />
+		<title>行业详情</title>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/header_nav.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/index.css" />
+		<!-- 联系我们 -->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/contact_us.css">
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/html5shiv.min.js"></script>
+			<script type="text/javascript" src="js/respond.min.js"></script>
+	    <![endif]-->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/media.css" />
+		<!-- new css by wys -->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/new.css" />
+		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/headerstyle.css">
+		<!-- 搜索预览插件样式-->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/search_demo.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/iconfont.css">
+	</head>
+		<style type="text/css">
+		  #content_one ul li{
+			list-style: disc;
+		  }
+  
+			.iconfont{float:none;}
+			.details .container div>img{
+				width:100%;
+				height:100%;
+			}
+			.vip-style-lf{
+				position: absolute;
+				overflow: hidden;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				color: #fff;
+				background: rgba(0, 0, 0, 0.3);
+				margin-bottom: 0;
+				height:25%;
+				text-align: center;
+				z-index: 2;
+				font-size: 36px;
+				color: #fff;
+			}
+			.news .thumbnail div{opacity: 0;transition:all 0.4s ease-out;}
+			.news .thumbnail div:hover{opacity: 1; }
+			.vip-btn-a{
+				width: 130px;
+				height: 50px;
+				background-color: #2f9ded;
+				color: #fff;
+				padding: 17px;
+				float: right;
+			}
+			.vip-btn-a:hover{
+				color: #fff;
+				cursor:pointer;
+			}
+
+			@media screen and (max-width: 768px){
+				.navbar-default {
+				    background: #bdbdbd;
+				}
+				#carousel-example-generic{
+					margin-top:25px;
+				}
+				.calssList{margin-top:85px!important;}
+				.details{padding:0;margin:85px auto!important;}
+				.details .container{padding:0;}
+				.details .container div.col-md-5{padding:0;}
+				.news{background:#fff!important;}
+			}
+		</style>
+	<body>
+		<main class="max-width-index">
+			
+			
+			<include file="Public/header"/>
+		</main>
+	<!-- 行业详情 -->
+<div class="details col-xs-12" style="margin:50px 0;">
+  <div class="container" >
+    <div class="col-md-5">
+      <volist name="iyimgss" id="vo">
+        <img src="__ROOT__{$vo['iyimgs']}" with="100%" height="100%" alt="">
+      </volist>
+    </div>
+    <div class="col-md-7">
+      <div>
+        <h2><span>{$industry_info.nameiy}</span></h2>
+      </div>
+
+      <div class="text" style="border-top:1px solid #ddd;">
+        <p style="margin-top:10px;font-size:13px;" id="content_one">
+
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--vip下载-->
+<div class="news col-xs-12" style="background-color: #eee;">
+  <div class="container">
+
+    <div class="row news-content">
+      <div class="common-title">
+        <h2>—— {$Think.lang.index_Industryinfo_download} ——</h2>
+      </div>
+
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="thumbnail">
+              <a href="">
+                <if condition="$iyjieshaos['anli1show'] eq 1">
+                    <img src="__ROOT__{$iyjieshaos['anli1']}" alt="" class="img-responsive">
+                </if>
+                <div class=" vip-style-lf">{$iyjieshaos['anliname1']}</div>
+              </a>
+
+            </div>
+          </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="thumbnail">
+          <a href="">
+            <if condition="$iyjieshaos['anli2show'] eq 1">
+              <img src="__ROOT__{$iyjieshaos['anli2']}" alt="" class="img-responsive">
+            </if>
+            <div class=" vip-style-lf">{$iyjieshaos['anliname2']}</div>
+          </a>
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="thumbnail">
+          <a href="">
+            <if condition="$iyjieshaos['anli3show'] eq 1">
+              <img src="__ROOT__{$iyjieshaos['anli3']}" alt="" class="img-responsive">
+            </if>
+            <div class=" vip-style-lf">{$iyjieshaos['anliname3']}</div>
+          </a>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+	<!--底部-->
+<include file="Public/footer"/>
+
+<script>
+
+    var content="{$industry_info.iycontent}";
+
+    $("#content_one").html(htmlspecialchars_decode(content));
+    function htmlspecialchars_decode(str){
+        str = str.replace(/&amp;/g, '&');
+        str = str.replace(/&lt;/g, '<');
+        str = str.replace(/&gt;/g, '>');
+        str = str.replace(/&quot;/g, "''");
+        str = str.replace(/&#039;/g, "'");
+        return str;
+    }
+</script>
+	</body>
+</html>

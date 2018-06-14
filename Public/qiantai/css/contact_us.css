@@ -1,0 +1,12 @@
+/*联系我们*/
+.contact-us{margin-top: 100px; margin-bottom: 100px}
+.font-title{font-size: 14px;
+}
+.contact-us img{width: 170px;height: 170px;}
+.contact-us .qr-code{text-align: right;}
+.font-phone{
+	font-size: 14PX;color: #666;
+}
+.phone-num{font-size: 34px;color: #333;}
+.font-address{font-size: 14px;color: #333}
+@media screen and (max-width: 1200px) and (min-width: 992px) {.row{width: 100%} .col-lg-6.qr-code{width: 50%; float: left; } } .font-index-btn{width: 100px;padding: 5px;background-color: #f3f3f3;border: 1px solid #bdbdbd;border-radius: 5px;}

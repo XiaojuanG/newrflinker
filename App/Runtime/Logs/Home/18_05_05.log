@@ -1,0 +1,287 @@
+[ 2018-05-05T01:11:19+08:00 ] 54.36.148.132 /new/index.php/Home/Rflinkerhztype/index/lang/ch-cn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007529s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0016s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0007s ]
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerhz` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_rflinkerhz as rflinkerhz FROM `qw_rflinkerhz` ORDER BY rrsort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkertype` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_rflinkertypename as fgtypename,cn_hzid as hzid FROM `qw_rflinkertype` ORDER BY rrtypesort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid /www/web/rflinker_com/public_html/new/App/Home/Controller/RflinkerhztypeController.class.php 第 39 行.
+NOTIC: [8] Undefined index: fid /www/web/rflinker_com/public_html/new/App/Home/Controller/RflinkerhztypeController.class.php 第 40 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY rrtypesort' at line 1
+
+[ 2018-05-05T01:54:18+08:00 ] 54.36.148.138 /new/index.php/Home/Productdetails/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002630s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0014s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0008s ]
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: id /www/web/rflinker_com/public_html/new/App/Home/Controller/ProductdetailsController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 81 行.
+NOTIC: [8] Use of undefined constant Vocationlist - assumed 'Vocationlist' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 97 行.
+NOTIC: [8] Use of undefined constant Codeinput - assumed 'Codeinput' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 100 行.
+NOTIC: [8] Use of undefined constant Aboutus - assumed 'Aboutus' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 103 行.
+NOTIC: [8] Undefined variable: hztype_arr /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 138 行.
+NOTIC: [8] Undefined variable: felgxiangqing /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 160 行.
+NOTIC: [8] Undefined variable: felgxiangqing /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 161 行.
+NOTIC: [8] Undefined variable: felgxiangqing /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 164 行.
+NOTIC: [8] Undefined variable: felgptdowns /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 166 行.
+NOTIC: [8] Undefined variable: felgxiangqing /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/4722ce9f6893de4df1acc80e009cbd5a.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2018-05-05T02:24:40+08:00 ] 54.36.149.29 /new/index.php/Home/Feighztype/Index/lang/ch-cn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.090552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.091338s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0018s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0007s ]
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_felghz` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_fghz as hzname FROM `qw_felghz` ORDER BY fghzsort  [ RunTime:0.0876s ]
+SQL: SHOW COLUMNS FROM `qw_felgtype` [ RunTime:0.0008s ]
+SQL: SELECT `id`,cn_fgtypename as fgtypename,cn_hzid as hzid FROM `qw_felgtype` ORDER BY fgtypesort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid /www/web/rflinker_com/public_html/new/App/Home/Controller/FeighztypeController.class.php 第 39 行.
+NOTIC: [8] Undefined index: fid /www/web/rflinker_com/public_html/new/App/Home/Controller/FeighztypeController.class.php 第 40 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY fgtypesort' at line 1
+
+[ 2018-05-05T11:18:50+08:00 ] 203.208.60.173 /new/index.php/Home/Aboutus/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0016s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0008s ]
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6d9195a7ccbe058f45cf16e69b231bd7.php 第 71 行.
+NOTIC: [8] Use of undefined constant Vocationlist - assumed 'Vocationlist' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6d9195a7ccbe058f45cf16e69b231bd7.php 第 87 行.
+NOTIC: [8] Use of undefined constant Codeinput - assumed 'Codeinput' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6d9195a7ccbe058f45cf16e69b231bd7.php 第 90 行.
+NOTIC: [8] Use of undefined constant Aboutus - assumed 'Aboutus' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6d9195a7ccbe058f45cf16e69b231bd7.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2018-05-05T17:19:49+08:00 ] 203.208.60.173 /new/index.php/Home/Vocationlistmain/index.html?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002218s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0008s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0007s ]
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `qw_industry` [ RunTime:0.0008s ]
+SQL: SELECT `id`,cn_nameiy as nameiy,cn_iycontent as iycontent,cn_iylogo as iylogo,cn_logoshow as logoshow,cn_anli1 as anli1,cn_anli2 as anli2,cn_anli3 as anli3,cn_anli1show as anli1show,cn_anli2show as anli2show,cn_anli3show as anli3show,cn_linksiy as linksiy,`cn_logoshow`,cn_anliname1 as anliname1,cn_anliname2 as anliname2,cn_anliname3 as anliname3 FROM `qw_industry` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,cn_nameiy as nameiy,cn_iycontent as iycontent FROM `qw_industry` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_industryimgs` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_iyimgs as iyimgs FROM `qw_industryimgs` WHERE `iyid` = 12 ORDER BY iyimgssort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6caa58430904c3fc15e164a15e4ff995.php 第 127 行.
+NOTIC: [8] Use of undefined constant Vocationlist - assumed 'Vocationlist' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6caa58430904c3fc15e164a15e4ff995.php 第 143 行.
+NOTIC: [8] Use of undefined constant Codeinput - assumed 'Codeinput' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6caa58430904c3fc15e164a15e4ff995.php 第 146 行.
+NOTIC: [8] Use of undefined constant Aboutus - assumed 'Aboutus' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/6caa58430904c3fc15e164a15e4ff995.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2018-05-05T21:57:37+08:00 ] 54.36.148.214 /new/index.php/Home/Index/Index/lang/en-us.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002596s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0009s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0007s ]
+SQL: SELECT `id`,en_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,en_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,en_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,en_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_indexshow` [ RunTime:0.0007s ]
+SQL: SELECT `id`,en_fghzname as fghzname,en_fghzshow as fghzshow,en_rrhzname as rrhzname,en_rrhzshow as rrhzshow,en_tjhzname as tjhzname,en_tjhzshow as tjhzshow FROM `qw_indexshow` LIMIT 1   [ RunTime:0.0556s ]
+SQL: SHOW COLUMNS FROM `qw_flashview` [ RunTime:0.0010s ]
+SQL: SELECT `id`,en_flashviewpc as flashviewpc,en_title as title,en_fwshowpc as fwshowpc,en_fwlink as fwlink,`fwsort`,en_name as name FROM `qw_flashview` ORDER BY fwsort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `qw_felghz` [ RunTime:0.0007s ]
+SQL: SELECT `id`,en_fghz as fghz,en_fghztitle as fghztitle,en_fghzimg as fghzimg,`fghzsort` FROM `qw_felghz` ORDER BY fghzsort LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_felgtype` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `qw_felgtype` WHERE ( en_hzid = 3 ) ORDER BY fgtypesort LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qw_felgtype` WHERE ( en_hzid = 4 ) ORDER BY fgtypesort LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qw_felgtype` WHERE ( en_hzid = 5 ) ORDER BY fgtypesort LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerhz` [ RunTime:0.0006s ]
+SQL: SELECT `id`,en_rflinkerhz as rflinkerhz,en_rrtitle as rrtitle,en_rrimg as rrimg,`rrsort` FROM `qw_rflinkerhz` ORDER BY rrsort LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_tuijian` [ RunTime:0.0006s ]
+SQL: SELECT `id`,en_felgname as felgname,en_rrname as rrname,`type`,`tjsotr` FROM `qw_tuijian` ORDER BY tjsotr  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_industry` [ RunTime:0.0009s ]
+SQL: SELECT `id`,en_imgiy as imgiy,`iysort`,en_nameiy as nameiy,en_title as title FROM `qw_industry` ORDER BY iysort LIMIT 4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 72 行.
+NOTIC: [8] Use of undefined constant Vocationlist - assumed 'Vocationlist' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 88 行.
+NOTIC: [8] Use of undefined constant Codeinput - assumed 'Codeinput' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 91 行.
+NOTIC: [8] Use of undefined constant Aboutus - assumed 'Aboutus' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2018-05-05T23:10:29+08:00 ] 203.208.60.172 /new/index.php/Home/Vocationlist/Index/lang/en-us.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002043s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.081129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.083260s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0009s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0007s ]
+SQL: SELECT `id`,en_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,en_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,en_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,en_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_industry` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qw_industry` LIMIT 1   [ RunTime:0.1695s ]
+SQL: SELECT `id`,en_imgiy as imgiy,`iysort`,en_nameiy as nameiy,en_title as title FROM `qw_industry` ORDER BY iysort LIMIT 4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/17ab6b028a23c7b6c8e8ca42d3d570bd.php 第 90 行.
+NOTIC: [8] Use of undefined constant Vocationlist - assumed 'Vocationlist' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/17ab6b028a23c7b6c8e8ca42d3d570bd.php 第 106 行.
+NOTIC: [8] Use of undefined constant Codeinput - assumed 'Codeinput' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/17ab6b028a23c7b6c8e8ca42d3d570bd.php 第 109 行.
+NOTIC: [8] Use of undefined constant Aboutus - assumed 'Aboutus' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/17ab6b028a23c7b6c8e8ca42d3d570bd.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-05-05T23:12:37+08:00 ] 54.36.148.73 /new/index.php/Home/Index/Index/lang/ch-cn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001700s ]
+SQL: SHOW COLUMNS FROM `qw_setting` [ RunTime:0.0008s ]
+SQL: SELECT `k`,`v` FROM `qw_setting`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_felgproduct` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerproduct` [ RunTime:0.0007s ]
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` WHERE ( search = 1 ) UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct where search=1 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: new_live /www/web/rflinker_com/public_html/new/App/Home/Controller/ComController.class.php 第 65 行.
+SQL: SELECT `id`,cn_ftname as name,`xl_type` FROM `qw_felgproduct` UNION SELECT id,cn_rrname as name,xl_type FROM qw_rflinkerproduct  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qw_indexshow` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_fghzname as fghzname,cn_fghzshow as fghzshow,cn_rrhzname as rrhzname,cn_rrhzshow as rrhzshow,cn_tjhzname as tjhzname,cn_tjhzshow as tjhzshow FROM `qw_indexshow` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_flashview` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_flashviewpc as flashviewpc,cn_title as title,cn_fwshowpc as fwshowpc,cn_fwlink as fwlink,`fwsort`,cn_name as name FROM `qw_flashview` ORDER BY fwsort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_felghz` [ RunTime:0.0005s ]
+SQL: SELECT `id`,cn_fghz as fghz,cn_fghztitle as fghztitle,cn_fghzimg as fghzimg,`fghzsort` FROM `qw_felghz` ORDER BY fghzsort LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_felgtype` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `qw_felgtype` WHERE ( cn_hzid = 3 ) ORDER BY fgtypesort LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qw_felgtype` WHERE ( cn_hzid = 4 ) ORDER BY fgtypesort LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qw_felgtype` WHERE ( cn_hzid = 5 ) ORDER BY fgtypesort LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_rflinkerhz` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_rflinkerhz as rflinkerhz,cn_rrtitle as rrtitle,cn_rrimg as rrimg,`rrsort` FROM `qw_rflinkerhz` ORDER BY rrsort LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_tuijian` [ RunTime:0.0006s ]
+SQL: SELECT `id`,cn_felgname as felgname,cn_rrname as rrname,`type`,`tjsotr` FROM `qw_tuijian` ORDER BY tjsotr  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `qw_industry` [ RunTime:0.0007s ]
+SQL: SELECT `id`,cn_imgiy as imgiy,`iysort`,cn_nameiy as nameiy,cn_title as title FROM `qw_industry` ORDER BY iysort LIMIT 4   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 72 行.
+NOTIC: [8] Use of undefined constant Vocationlist - assumed 'Vocationlist' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 88 行.
+NOTIC: [8] Use of undefined constant Codeinput - assumed 'Codeinput' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 91 行.
+NOTIC: [8] Use of undefined constant Aboutus - assumed 'Aboutus' /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 94 行.
+NOTIC: [8] Undefined index: typeid /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 171 行.
+NOTIC: [8] Undefined index: typeid /www/web/rflinker_com/public_html/new/App/Runtime/Cache/Home/3da8682377a51f4116c98bfda6b18a92.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+

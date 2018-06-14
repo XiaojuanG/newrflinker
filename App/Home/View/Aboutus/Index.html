@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- 优先使用 IE 最新版本和 Chrome -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- 为移动设备添加 viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!--忽略页面中的数字识别为电话，忽略email识别-->
+  <meta name="format-detection" content="telphone=no, email=no" />
+  <title>{$Think.lang.title_About}</title>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/header_nav.css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/index.css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/aboutme.css">
+  <!-- 联系我们 -->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/contact_us.css">
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="__PUBLIC__/qiantai/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/qiantai/js/respond.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/media.css" />
+  <!-- new css by wys -->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/new.css" />
+  <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/headerstyle.css">
+  <!-- 搜索预览插件样式-->
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/search_demo.css">
+  <style type="text/css">
+    .about-news{
+      padding-top: 0
+    }
+  </style>
+</head>
+
+<body>
+<main class="max-width-index">
+  <include file="Public/header"/>
+
+  <!-- ios头部固定框 -->
+  <div class="scrollable" id="scrollable">
+
+
+    <!--产品展示-->
+    <div class="news about-news">
+      <div class="container">
+
+        <div class="row news-content" >
+          <div class="common-title">
+            <h2>——{$Think.lang.index-company}——</h2>
+          </div>
+          <div class="company">
+            <img src="__PUBLIC__/qiantai/img/about.png" style="width:100%;">
+            <div class="company-abuot">
+              <div class="common-title">
+                <h3>上海润斐电子科技有限公司</h3>
+
+              </div>
+              <p class="company-p" >上海润斐电子科技有限公司是一家致力于物联网行业，专业为客户提供RFID产品及相关硬件解决方案的公司。</p>
+              <p class="company-p">公司多年来累积丰富的RFID市场实务经验、研发生产技术，可为客户提供最完整的RFID产品及需求规划。除专精于RFID外，于广度上，公司不断引进各种新式的Auto ID技术，各种新式电子识别技术等都将是公司全力着墨的市场。 </p>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--行业应用-->
+    <div class="product">
+      <div class="container">
+        <div class="row pro-content">
+          <div class="common-title">
+            <h2>——{$Think.lang.company-visio}——</h2>
+          </div>
+
+          <p class="about-p" >企业愿景：体现了企业家的立场和信仰，是企业最高管理者头脑中的一种概念，是这些最高管理者对企业未来的设想。</p>
+          <p class="about-p">是对“我们代表什么”体现了企业家的立场和信仰</p>
+
+          <p class="about-p">是企业最高管理者头脑中的一种概念，是这些最高管理者对企业未来的设想。 是对“我们代表什么”</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!--底部-->
+    <include file="Public/footer"/>
+</body>
+</html>

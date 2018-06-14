@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<!--忽略页面中的数字识别为电话，忽略email识别-->
+		<meta name="format-detection" content="telphone=no, email=no" />
+		<title>公共下载</title>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/header_nav.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/commonDownload.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/index.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/commonDownload.css"> -->
+		<!-- 联系我们 -->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/contact_us.css">
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/html5shiv.min.js"></script>
+			<script type="text/javascript" src="js/respond.min.js"></script>
+	    <![endif]-->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/media.css" />
+		<!-- new css by wys -->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/new.css" />
+		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/headerstyle.css">
+		<!-- 搜索预览插件样式-->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/search_demo.css">
+		<style type="text/css" media="screen">
+			@media screen and (max-width: 750px){
+				.navbar-default {
+				    background: #bdbdbd;
+
+				}
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<main class="max-width-index">
+			
+			<!--加载头部-->
+			<include file="Public/header"/>
+
+			<div class="scrollable" id="scrollable">
+				<!--轮播图-->
+				<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+					
+					<!-- 图片区域 -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="__PUBLIC__/qiantai/img/banner1.jpg" alt="">
+							
+						</div>
+						
+					</div>
+
+				
+				</div>
+				<!--vip下载-->
+				<div class="news col-xs-12" style="background-color: #eee;padding-top:15px;">
+					<div class="container">
+						<!-- 模态框（Modal） -->
+						<div class="modal fade " id="myModal" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" data-keyboard="false">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" 
+												aria-hidden="true">×
+										</button>
+									
+										<h4 class="modal-title" id="myModalLabel" style="text-align: center;">
+											 {$Think.lang.supportservicesdemo_downvipyzm} 
+										</h4>
+									</div>
+									<div class="modal-body">
+										<form class="">
+											<div class="form-group">
+											    <input type="text" class="form-control vipname" placeholder="{$Think.lang.supportservicesdemo_yzm}" data-foolish-msg="{$Think.lang.supportservicesdemo_isyzm}">
+											</div>
+											<!-- <div class="form-group">
+											    <input type="password" class="form-control vippwd" placeholder="{$Think.lang.supportser_pwd}" data-foolish-msg="{$Think.lang.supportser_ispwd}">
+											</div> -->
+											<div class="form-group" >
+												<a href="#" type="button" style="text-align:center; display:block;background-color: #fafafa;border: 1px solid #dfdfdf; padding: 5px;color: #000; width: 100px;height: 30px;margin:0 auto;  " class="vipbutton" >{$Think.lang.supportser_sub}</a>
+
+											</div>
+											
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row news-content" style="padding-top:25px;">
+							<div class="common-title">
+								<h2>—— {$Think.lang.supportservices_down} ——</h2>						
+							</div>
+							<div class="col-xs-12">
+								
+								<ul class="font-ul-vip col-xs-12" >
+								<volist name="supports" id="val">
+									<a href="__PUBLIC__/Uploads/{$val['file']}" target="view_window"><li class="col-md-4 col-xs-12">{$val['stname']}<i class="iconfont">&#xe615;</i></a></li>
+								</volist>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!--加载底部-->
+				<include file="Public/footer"/>
+				
+	</body>
+</html>

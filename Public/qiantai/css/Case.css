@@ -1,0 +1,199 @@
+.news_content{background:#00aaf0;padding:10px 0;}
+.news_content a{
+    display:block;
+}
+.collapse.in{display:block!important;}
+.news_content a:hover>div span{
+    color:#000000;
+}
+.text-title{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.news-text span{
+    display:block;
+    color:#fff;
+}
+
+/*  appraisal  - 开始 - */
+.appraisal{
+    width:80%;
+    margin:auto;
+    padding:0 20px;
+    margin-top:80px;
+}
+.appraisal h3{
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.appraisal h3 i{
+    width:30px;
+    height:3px;
+    margin-top:10px;
+    background:rgba(0,0,0,.2);
+}
+.appraisal p{
+    font-size:13px;
+}
+
+
+/*  appraisal  - 结束 - */
+
+/*classification - 开始 */
+.classification{margin-top:30px;margin-bottom:30px;}
+.classification ul{
+    display:none;
+
+}
+.classification ul li>a{
+    color:#fff;
+}
+.classification div.col-xs-4{
+    border:1px solid #000;
+}
+.classification span{
+    cursor:pointer;
+}
+.classification .col-md-4{
+    width:32.333333%;
+    margin:0 0.5%;
+    border:1px solid white;
+}
+.classification .col-md-4 span{
+    text-transform:uppercase;
+    font-weight: 700;
+    line-height: 50px;
+    color:white;
+}
+.classification .col-md-4 ul li a{
+    text-transform:uppercase;
+}
+.classification .col-md-4:hover{
+    border-color:black;
+}
+.classification .col-md-4:hover>span{
+    color:black;
+}
+.classification .col-md-4 ul li:hover>a{
+    color:black;
+}
+/*classification - 结束 */
+
+/*details - 开始*/
+.details .menu p{margin:10px 0;}
+.details .menu p a{
+    color:#0086c1;
+    font-size:12px;
+    text-transform:uppercase;
+}
+.product ul li{
+    box-shadow:0 2px 5px #ddd;
+}
+.product ul li>span{
+    text-transform:uppercase;
+    line-height: 60px;
+    font-size:20px;
+    font-weight: 700;
+    
+    cursor:pointer;
+
+}
+.product ul li>span>a{color:#00aaf0;}
+.product-item{
+    width:75%;
+    margin:auto;
+}
+ .product-title p{
+    font-size:13px; 
+    color:#7f8c9b;
+    margin:20px 0;
+ }
+.product-title h4{
+    font-size:15px;
+    margin:15px 0;
+}
+.product-title h4 em{
+    font-size:13px;
+}
+
+.product-text{
+    height: 145px;
+    text-align: justify;
+    background-color: #e5e8eb;
+    font-weight: 600;
+    padding: 15px;
+}
+.product-text>div{width:100%;word-wrap:break-word;}
+.product-text>span{color:#00aaf0;}
+.product-img{margin:auto;}
+.product-img a{display:inline-block;width:100%;}
+.product-img img{display:block;width:250px;margin:auto;padding:20px;}
+.product-banner{
+    height:400px;
+}
+/*details - 结束*/
+
+.swiper-button-next,.swiper-button-prev{
+    top:100%;
+}
+/*折叠*/
+.panel-group .panel{
+    border-radius:0;
+    border-color:#fff;
+    box-shadow: 0 3px 5px #ddd;
+}
+.panel-default > .panel-heading{
+    background:#fff;
+}
+.panel-title > a{
+    font-size:20px;
+    font-weight: 700;
+    line-height: 50px;
+    color:#00aaf0;
+}
+.swiper-slide>a .product-text>div{color:#333;}
+
+/*.swiper-wrapper{overflow:hidden;}*/
+@media screen and (max-width:768px ){
+
+    .row.news_content div.container:nth-child(1){
+        display:none;
+    }
+    .appraisal{
+        margin-top:30px;
+    }
+    .classification .col-md-4{
+        width:100%;
+        margin:5px 0;
+    }
+    .panel.panel-default .swiper-container{padding:0;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>带搜索的城市下拉菜单</title>
+<style type="text/css">
+    body{font-family:Arial, Helvetica, sans-serif,"宋体";font-size:12px;text-align:center;}
+    #box{width:600px;text-align:left;margin:0 auto;padding-top:80px;}
+    #suggest{width:200px;}
+    .gray{color:gray;}
+    .ac_results {background:#fff;border:1px solid #7f9db9;position:absolute;z-index:10000;display:none;}
+    .ac_results ul{margin:0;padding:0;list-style:none;}
+    .ac_results li a{white-space:nowrap;text-decoration:none;display:block;color:#05a;padding:1px 3px;}
+    .ac_results li{border:1px solid #fff;}
+    .ac_over,.ac_results li a:hover {background:#c8e3fc;}
+    .ac_results li a span{float:right;}
+    .ac_result_tip{border-bottom:1px dashed #666;padding:3px;}
+</style>
+</head>
+<body>
+    <div id="box">
+        <input type="text" name="arrcity" id="arrcity" />
+        <div id='suggest' class="ac_results"></div>
+    </div>
+    <script src="jquery.min.js"></script>
+
+    <script src="aircity.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#arrcity").suggest(citys,{
+                hot_list:commoncitys,dataContainer:'#arrcity_3word',attachObject:'#suggest',
+            });
+        });
+    </script>
+    <script>
+    //
+
+    </script>
+</body>
+</html>

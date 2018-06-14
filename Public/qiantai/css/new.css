@@ -1,0 +1,30 @@
+.max-width-index{
+	max-width: 1190px;
+	margin:0 auto; 
+}
+.form-group-mobile{
+	color: black;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 170, 240);
+    background-color: rgba(0,0,0,0);
+    border-radius: 4px;
+    margin-bottom: 0px;
+}
+
+
+
+@media (min-width: 769px){
+	.navbar-default{
+    	border-color: #e7e7e7;
+    	background-color:#fff;
+	}
+}
+
+@media (max-width: 768px){
+	.navbar-default{
+		// background-color:rgba(0,0,0,0.1) !important;
+		border-color: #e7e7e7;
+	}
+}

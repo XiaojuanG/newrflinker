@@ -1,0 +1,6 @@
+.about-p{text-align: center;padding-right: 100px;padding-left:100px}
+.company{position: relative;}
+.company-abuot{
+	width: 34%;height: 70%;background-color: rgba(52,52,52,0.8);position: absolute;bottom: 0;left: 33%;color: #fff;
+}
+.company-p{text-align: center;padding-right: 30px;padding-left:30px}
