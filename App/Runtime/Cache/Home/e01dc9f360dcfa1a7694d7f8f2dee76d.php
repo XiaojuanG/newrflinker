@@ -10,27 +10,27 @@
 		<!--忽略页面中的数字识别为电话，忽略email识别-->
 		<meta name="format-detection" content="telphone=no, email=no" />
 		<title><?php echo (L("title_Product")); ?></title>
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/header_nav.css" />
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/header_nav.css" />
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/index.css" />
 		<!-- 联系我们 -->
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/contact_us.css">
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/contact_us.css">
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="js/html5shiv.min.js"></script>
 			<script type="text/javascript" src="js/respond.min.js"></script>
 	    <![endif]-->
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/media.css" />
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/media.css" />
 		<!-- new css by wys -->
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/new.css" />
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/new.css" />
 		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/headerstyle.css">
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/headerstyle.css">
 		<!-- 搜索预览插件样式-->
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/search_demo.css">
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/Case.css">
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/iconfont.css">
-		<link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/swiper/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/search_demo.css">
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/Case.css">
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/swiper/swiper.min.css">
 		<style type="text/css">
 			@media screen and (max-width: 768px){
 				.navbar-default {
@@ -57,7 +57,7 @@
     <nav class="navbar navbar-default navbar-fixed-top top-box">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="<?php echo U('Index/Index');?>">          <img src="/rflinker/Public/qiantai/img/login.png">        </a> </div>
+                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="<?php echo U('Index/Index');?>">          <img src="/newrflinker/Public/qiantai/img/login.png">        </a> </div>
             <script>
             window.__arr__ = <?php echo ($new_live); ?>;
             window.__arr2__ = <?php echo ($new_live_all); ?>;
@@ -141,7 +141,7 @@
 													<?php if(is_array($vo['pt'])): $i = 0; $__LIST__ = $vo['pt'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pt): $mod = ($i % 2 );++$i;?><div class="swiper-slide">
 															<a href="projectDeta.html">
 																<div class="product-img">
-																	<a target="_top" href="<?php echo U('Productdetails/index');?>?type=2&&id=<?php echo ($pt['id']); ?>"><img src="/rflinker<?php echo ($pt['rrimg']); ?>" alt="product"/></a>
+																	<a target="_top" href="<?php echo U('Productdetails/index');?>?type=2&&id=<?php echo ($pt['id']); ?>"><img src="/newrflinker<?php echo ($pt['rrimg']); ?>" alt="product"/></a>
 																</div>
 															</a>
 															<a href="projectDeta.html">
@@ -218,7 +218,7 @@
 								<p class="font-title"><?php echo (L("index_Saoma")); ?></p>
 								
 								<div>
-									 <img src="/rflinker/Public/qiantai/img/qr-code.png" >
+									 <img src="/newrflinker/Public/qiantai/img/qr-code.png" >
 								</div>
 								<div>
 									  <p class="font-phone"><?php echo (L("index_FormTel")); ?>:</p>
@@ -243,24 +243,24 @@
 	</main>
 	
 	
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/jquery.js"></script>
-		<script type="text/javascript" src="/rflinker/Public/qiantai/search_demo/jquery.min.js"></script>
-		<script type="text/javascript" src="/rflinker/Public/qiantai/js/bootstrap.js"></script>
-		<script type="text/javascript" src="/rflinker/Public/qiantai/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/jquery.js"></script>
+		<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/jquery.min.js"></script>
+		<script type="text/javascript" src="/newrflinker/Public/qiantai/js/bootstrap.js"></script>
+		<script type="text/javascript" src="/newrflinker/Public/qiantai/swiper/swiper.min.js"></script>
 		
-		<script type="text/javascript" src="/rflinker/Public/qiantai/js/nav.js"></script>
+		<script type="text/javascript" src="/newrflinker/Public/qiantai/js/nav.js"></script>
 		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-		<script type="text/javascript" src="/rflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
+		<script type="text/javascript" src="/newrflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
 		<!-- 搜索预览插件 -->
-		<script type="text/javascript" src="/rflinker/Public/qiantai/search_demo/aircity.js"></script>
-		<script src="/rflinker/Public/qiantai/js/main.js"></script>
-		<script src="/rflinker/Public/qiantai/layer/mobile/layer.js"></script>
-		<script type="text/javascript" src="/rflinker/Public/qiantai/js/connectUs.js"></script>
+		<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/aircity.js"></script>
+		<script src="/newrflinker/Public/qiantai/js/main.js"></script>
+		<script src="/newrflinker/Public/qiantai/layer/mobile/layer.js"></script>
+		<script type="text/javascript" src="/newrflinker/Public/qiantai/js/connectUs.js"></script>
 		 <script type="text/javascript">
     	//点击显示/隐藏
 	    	(function(){
 	    		$(".classification span").click(function(){
-	    			$(".classification ul").toggle(1000);
+	    			$(".classification ul").toggle(100);
 	    		});
 	    	})();
 

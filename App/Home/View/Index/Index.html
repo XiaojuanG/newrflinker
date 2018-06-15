@@ -27,9 +27,20 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/search_demo.css">
     <style type="text/css">
     .descript{
+      text-overflow:ellipsis; 
       overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+    }
+    .thumbnail-industry{
+        box-shadow: 3px 1px 10px #c7c4c4;
+    }
+    .common-title{
+        padding: 20px 15px;
+    }
+    .common-title h2{
+        margin-bottom: 20px;
     }
     </style> 
 </head>
@@ -84,10 +95,10 @@
                                 <h2>——{$Think.lang.index_Industry}——</h2> </div>
                             <volist name="iyimg" id="vo">
                                 <div class="col-lg-3 col-md-3 col-sm-4 ">
-                                    <div class="thumbnail"> <a href="{:U('Vocationlistmain/index')}?id={$vo['id']}">										   <img src="__ROOT__{$vo['imgiy']}" alt="" class="img-responsive" />										</a>
+                                    <div class="thumbnail thumbnail-industry "> <a href="{:U('Vocationlistmain/index')}?id={$vo['id']}">										   <img src="__ROOT__{$vo['imgiy']}" alt=""  class="img-responsive" />										</a>
                                         <div class="caption hidden-xs">
-                                            <h3 style="margin-top:10px"><a style="color:black" href="{:U('Vocationlistmain/index')}?id={$vo['id']}">{$vo['nameiy']}</a></h3>
-                                            <p class="descript"> {$vo['title']}</p>
+                                            <h4 style="margin-top:2px"><a style="color:#4767f4" href="{:U('Vocationlistmain/index')}?id={$vo['id']}">{$vo['nameiy']}</a></h4>
+                                            <p class="descript" style="    height: 80px;font-size: 13px; "> {$vo['title']}</p>
                                             <div class="trade" style="border-top: 1px solid #eee;">
                                                 <p><a href=""></a></p>
                                             </div>

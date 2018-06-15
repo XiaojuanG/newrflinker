@@ -111,8 +111,8 @@ word-break:break-all;
 /*首页--新闻中心*/
 
 .news {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .news .news-content {
@@ -228,8 +228,8 @@ word-break:break-all;
 /*首页--产品中心*/
 
 .product {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .pro-content>div {
@@ -761,8 +761,8 @@ word-break:break-all;
 	}
 	/*首页--新闻*/
 	.news {
-		padding-top: 80px;
-		padding-bottom: 50px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.news .news-content {
 		margin-top: 95px;
@@ -806,8 +806,8 @@ word-break:break-all;
 	}
 	/*首页--产品中心*/
 	.product {
-		padding-top: 80px;
-		padding-bottom: 90px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.pro-content>div {
 		padding-left: 15px;

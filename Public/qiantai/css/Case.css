@@ -49,6 +49,9 @@
 }
 .classification ul li>a{
     color:#fff;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
 }
 .classification div.col-xs-4{
     border:1px solid #000;
@@ -59,7 +62,7 @@
 .classification .col-md-4{
     width:32.333333%;
     margin:0 0.5%;
-    border:1px solid white;
+    border:2px solid white;
 }
 .classification .col-md-4 span{
     text-transform:uppercase;

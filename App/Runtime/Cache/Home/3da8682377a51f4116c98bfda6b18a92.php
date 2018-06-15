@@ -10,26 +10,37 @@
     <!--忽略页面中的数字识别为电话，忽略email识别-->
     <meta name="format-detection" content="telphone=no, email=no" />
     <title><?php echo (L("title_Index")); ?></title>
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/header_nav.css" />
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/base.css" />
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/header_nav.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/index.css" />
     <!-- 联系我们 -->
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/contact_us.css">
-    <!--[if lt IE 9]>			<script type="text/javascript" src="/rflinker/Public/qiantai/js/html5shiv.min.js"></script>			<script type="text/javascript" src="/rflinker/Public/qiantai/js/respond.min.js"></script>	    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/media.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/contact_us.css">
+    <!--[if lt IE 9]>			<script type="text/javascript" src="/newrflinker/Public/qiantai/js/html5shiv.min.js"></script>			<script type="text/javascript" src="/newrflinker/Public/qiantai/js/respond.min.js"></script>	    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/media.css" />
     <!-- new css by wys -->
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/new.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/new.css" />
     <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/headerstyle.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/headerstyle.css">
     <!-- 搜索预览插件样式-->
-    <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/search_demo.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/search_demo.css">
     <style type="text/css">
     .descript{
+      text-overflow:ellipsis; 
       overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+    }
+    .thumbnail-industry{
+        box-shadow: 3px 1px 10px #c7c4c4;
+    }
+    .common-title{
+        padding: 20px 15px;
+    }
+    .common-title h2{
+        margin-bottom: 20px;
     }
     </style> 
 </head>
@@ -42,7 +53,7 @@
     <nav class="navbar navbar-default navbar-fixed-top top-box">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="<?php echo U('Index/Index');?>">          <img src="/rflinker/Public/qiantai/img/login.png">        </a> </div>
+                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="<?php echo U('Index/Index');?>">          <img src="/newrflinker/Public/qiantai/img/login.png">        </a> </div>
             <script>
             window.__arr__ = <?php echo ($new_live); ?>;
             window.__arr2__ = <?php echo ($new_live_all); ?>;
@@ -92,7 +103,7 @@
                 <div class="carousel-inner" role="listbox">
                     <?php if(is_array($img)): $j = 0; $__LIST__ = $img;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($j % 2 );++$j; if($j == 1): ?><div class="item active">
                                 <?php else: ?>
-                                <div class="item"><?php endif; ?> <img src="/rflinker<?php echo ($val['flashviewpc']); ?>" alt="">
+                                <div class="item"><?php endif; ?> <img src="/newrflinker<?php echo ($val['flashviewpc']); ?>" alt="">
                         <div class="banner-text">
                             <p><?php echo ($val['name']); ?><span><?php echo ($val['title']); ?></span> </p> <a href="<?php echo ($val['fwlink']); ?>" type="button" class="font-btn-a"><?php echo (L("Buy_Now")); ?></a> </div>
                         </div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -105,7 +116,7 @@
                             <div class="common-title">
                                 <h2>——<?php echo (L("index_Recommend")); ?>——</h2> </div>
                             <?php if(is_array($felghzs)): $i = 0; $__LIST__ = $felghzs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="thumbnail"> <a href="<?php echo U('Feighztype/Index');?>?typeid=<?php echo ($val['typeid']); ?>&fid=<?php echo ($val['id']); ?>">												<img src="/rflinker<?php echo ($val['fghzimg']); ?>" alt="" class="img-responsive">												<p class="font-p-lf"><?php echo ($val['fghz']); ?><span class="font-span"><?php echo ($val['fghztitle']); ?></span></p>											</a> </div>
+                                    <div class="thumbnail"> <a href="<?php echo U('Feighztype/Index');?>?typeid=<?php echo ($val['typeid']); ?>&fid=<?php echo ($val['id']); ?>">												<img src="/newrflinker<?php echo ($val['fghzimg']); ?>" alt="" class="img-responsive">												<p class="font-p-lf"><?php echo ($val['fghz']); ?><span class="font-span"><?php echo ($val['fghztitle']); ?></span></p>											</a> </div>
                                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
@@ -117,10 +128,10 @@
                             <div class="common-title">
                                 <h2>——<?php echo (L("index_Industry")); ?>——</h2> </div>
                             <?php if(is_array($iyimg)): $i = 0; $__LIST__ = $iyimg;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-lg-3 col-md-3 col-sm-4 ">
-                                    <div class="thumbnail"> <a href="<?php echo U('Vocationlistmain/index');?>?id=<?php echo ($vo['id']); ?>">										   <img src="/rflinker<?php echo ($vo['imgiy']); ?>" alt="" class="img-responsive" />										</a>
+                                    <div class="thumbnail thumbnail-industry "> <a href="<?php echo U('Vocationlistmain/index');?>?id=<?php echo ($vo['id']); ?>">										   <img src="/newrflinker<?php echo ($vo['imgiy']); ?>" alt=""  class="img-responsive" />										</a>
                                         <div class="caption hidden-xs">
-                                            <h3 style="margin-top:10px"><a style="color:black" href="<?php echo U('Vocationlistmain/index');?>?id=<?php echo ($vo['id']); ?>"><?php echo ($vo['nameiy']); ?></a></h3>
-                                            <p class="descript"> <?php echo ($vo['title']); ?></p>
+                                            <h4 style="margin-top:2px"><a style="color:#4767f4" href="<?php echo U('Vocationlistmain/index');?>?id=<?php echo ($vo['id']); ?>"><?php echo ($vo['nameiy']); ?></a></h4>
+                                            <p class="descript" style="    height: 80px;font-size: 13px; "> <?php echo ($vo['title']); ?></p>
                                             <div class="trade" style="border-top: 1px solid #eee;">
                                                 <p><a href=""></a></p>
                                             </div>
@@ -168,7 +179,7 @@
             </div>
             <div class="col-lg-6 qr-code">
                 <p class="font-title"><?php echo (L("index_Saoma")); ?></p>
-                <div> <img src="/rflinker/Public/qiantai/img/qr-code.png"> </div>
+                <div> <img src="/newrflinker/Public/qiantai/img/qr-code.png"> </div>
                 <div>
                     <p class="font-phone"><?php echo (L("index_FormTel")); ?>:</p>
                     <p class="phone-num">139-1899-9394</p>
@@ -188,18 +199,18 @@
 </footer>
 </div>
 </main>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/jquery.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/bootstrap.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/search_demo/jquery.min.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/nav.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/jquery.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/bootstrap.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/jquery.min.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/nav.js"></script>
 <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-<script type="text/javascript" src="/rflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
-<script src="/rflinker/Public/qiantai/js/main.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
+<script src="/newrflinker/Public/qiantai/js/main.js"></script>
 <!--		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js">--></script>
 <!-- 搜索预览插件 -->
-<script type="text/javascript" src="/rflinker/Public/qiantai/search_demo/aircity.js"></script>
-<script src="/rflinker/Public/qiantai/layer/mobile/layer.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/connectUs.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/aircity.js"></script>
+<script src="/newrflinker/Public/qiantai/layer/mobile/layer.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/connectUs.js"></script>
 <script>
 $(function() {
     function checkUserName(username){
