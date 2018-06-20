@@ -6,16 +6,17 @@
     left: 200px;
     text-align: center;
     width: 30%;
-    height: 40%;
-    background-color: #eee;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
 }
 .banner-text p{
-	font-size: 28px;color: #fff;padding: 5px;
+	font-size: 28px;color: #00aaf0;padding: 5px;
 }
-.banner-text p span{font-size: 20px; color: #fff;display: block;
+.banner-text p span{font-size: 20px; color: #00aaf0;display: block;
 }
 .font-btn-a{
-	font-size: 26px;color: #fff;background-color: #2f9ded;padding: 5px 30px;
+	font-size: 26px;color: #fff;background-color: #2f9ded;padding: 5px 30px;display: inline-block;margin: 0 0 10px;
 }
 /*--------------------banner结束-------------------------*/
 

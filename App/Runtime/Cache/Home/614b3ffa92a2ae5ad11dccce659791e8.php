@@ -119,9 +119,6 @@
 			
 			
 	     <div class="details container" style="margin:auto;margin-left:0;margin-right:0;padding:0;">
-          
-		  
-		    
 					<div class="panel-group" id="accordion">
 					<?php if(is_array($hztypes_arr)): $j = 0; $__LIST__ = $hztypes_arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($j % 2 );++$j;?><div class="panel panel-default">
 							<div class="panel-heading">
@@ -260,8 +257,7 @@
 
     	// 轮播
 	        var swiper = new Swiper('.swiper-container', {   
-	          loop : false, 
-	          centeredSlides: true,                    
+	          loop : false,                     
 	            slidesPerView:3,
 	            spaceBetween:10,
 	            breakpoints:{
