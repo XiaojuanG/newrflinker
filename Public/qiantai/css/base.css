@@ -107,7 +107,14 @@ word-break:break-all;
 .bread .active{
 	color: #4598E3;
 }
-
+.common-title h2:after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 3px;
+    margin: 15px auto;
+    background-color: #d9dada;
+}
 /*首页--新闻中心*/
 
 .news {
