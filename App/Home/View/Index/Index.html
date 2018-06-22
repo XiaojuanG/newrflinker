@@ -43,6 +43,7 @@
     .common-title h2{
         margin-bottom: 20px;
     }
+    
     </style> 
 </head>
 
@@ -79,7 +80,7 @@
                     <div class="container">
                         <div class="row news-content">
                             <div class="common-title">
-                                <h2>——{$Think.lang.index_Recommend}——</h2> </div>
+                                <h2>{$Think.lang.index_Recommend}</h2> </div>
                             <volist name="felghzs" id="val">
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <div class="thumbnail"> <a href="{:U('Feighztype/Index')}?typeid={$val['typeid']}&fid={$val['id']}">												<img src="__ROOT__{$val['fghzimg']}" alt="" class="img-responsive">												<p class="font-p-lf">{$val['fghz']}<span class="font-span">{$val['fghztitle']}</span></p>											</a> </div>
@@ -93,7 +94,7 @@
                     <div class="container">
                         <div class="row pro-content">
                             <div class="common-title">
-                                <h2>——{$Think.lang.index_Industry}——</h2> </div>
+                                <h2>{$Think.lang.index_Industry}</h2> </div>
                             <volist name="iyimg" id="vo">
                                 <div class="col-lg-3 col-md-3 col-sm-4 ">
                                     <div class="thumbnail thumbnail-industry "> <a href="{:U('Vocationlistmain/index')}?id={$vo['id']}">										   <img src="__ROOT__{$vo['imgiy']}" alt=""  class="img-responsive" />										</a>
