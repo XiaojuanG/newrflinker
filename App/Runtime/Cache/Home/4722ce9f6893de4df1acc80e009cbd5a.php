@@ -1,53 +1,59 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<!-- 优先使用 IE 最新版本和 Chrome -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<!-- 为移动设备添加 viewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-		<!--忽略页面中的数字识别为电话，忽略email识别-->
-		<meta name="format-detection" content="telphone=no, email=no" />
-		<title>产品详情</title>
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/header_nav.css" />
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/index.css" />
-		<!-- 联系我们 -->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/contact_us.css">
-		<!-- 产品详情 -->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/productDeta.css">
-		<!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8" />
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 为移动设备添加 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别-->
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <title>产品详情</title>
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/header_nav.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/index.css" />
+    <!-- 联系我们 -->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/contact_us.css">
+    <!-- 产品详情 -->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/productDeta.css">
+    <!--[if lt IE 9]>
 			<script type="text/javascript" src="js/html5shiv.min.js"></script>
 			<script type="text/javascript" src="js/respond.min.js"></script>
 	    <![endif]-->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/media.css" />
-		<!-- new css by wys -->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/new.css" />
-		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/headerstyle.css">
-		<!-- 搜索预览插件样式-->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/search_demo.css">
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/Case.css">
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/iconfont.css">
-			<style type="text/css">
-				@media screen and (max-width: 768px){
-				.navbar-default {
-				    background: #bdbdbd;
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/media.css" />
+    <!-- new css by wys -->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/new.css" />
+    <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/headerstyle.css">
+    <!-- 搜索预览插件样式-->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/search_demo.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/Case.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/iconfont.css">
+    <style type="text/css">
+    @media screen and (max-width: 768px) {
+        .navbar-default {
+            background: #bdbdbd;
+        }
+    }
 
-				}
-			}
-			.lf-wrapper .lf-item{
-				display: inline-block;
-				width: 100%;
-			}
-			</style>
-	</head>
+    .lf-wrapper .lf-item {
+        display: inline-block;
+        width: 100%;
+    }
+    .description-headline:not(:first-child){
+    	margin-top: 30px;
+    }
+    .component-items li{
+    	line-height: 1.8;
+    }
+    </style>
+</head>
 
-	<body>
-		    <main class="max-width-index">
+<body>
+    <main class="max-width-index">
     <!--导航-->
     <nav class="navbar navbar-default navbar-fixed-top top-box">
         <div class="container">
@@ -90,86 +96,71 @@
         <!-- /.container -->
     </nav>
     <!--/ 导航-->
-			<div class="scrollable" id="scrollable">
-				<!--产品展示-->		
-				<div class=" news_content lf-wrapper">
-			        <div class="col-sx-12 classification container">
-			            <?php if(is_array($hztype_arr)): $i = 0; $__LIST__ = $hztype_arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 col-xs-12">
-			                <span class="lf-item"> <?php echo ($vo['hz']['hzname']); ?> <i class="icon iconfont icon-jiantou"></i></span>
-			                <ul class="list-unstyled">
-							<?php if(is_array($vo['type'])): $i = 0; $__LIST__ = $vo['type'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voer): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Feighztype/index');?>?typeid=<?php echo ($voer['id']); ?>&fid=<?php echo ($voer['hzid']); ?>"><?php echo ($voer['fgtypename']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-			                </ul>
-			            </div><?php endforeach; endif; else: echo "" ;endif; ?>
-						
-						
-						
-			        </div>
-			    </div>
+    <div class="scrollable" id="scrollable">
+        <!--产品展示-->
+        <div class=" news_content lf-wrapper">
+            <div class="col-sx-12 classification container">
+                <?php if(is_array($hztype_arr)): $i = 0; $__LIST__ = $hztype_arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 col-xs-12">
+                        <span class="lf-item"> <?php echo ($vo['hz']['hzname']); ?> <i class="icon iconfont icon-jiantou"></i></span>
+                        <ul class="list-unstyled">
+                            <?php if(is_array($vo['type'])): $i = 0; $__LIST__ = $vo['type'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voer): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Feighztype/index');?>?typeid=<?php echo ($voer['id']); ?>&fid=<?php echo ($voer['hzid']); ?>"><?php echo ($voer['fgtypename']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </ul>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+        </div>
+        <div class="news">
+            <div class="class-case">
+                <h2>STATIONÄRE LESER</h2>
+            </div>
+            <div class="container">
+                <div class="row news-content">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-md-12">
+                            <h2 class="fttitle"><?php echo ($felgxiangqing["fttitle"]); ?></h2>
+                            <p class="ftname"><?php echo ($felgxiangqing["ftname"]); ?></p>
+                        </div>
+                        <div class="col-md-12">
+                            <?php echo ($felgxiangqing["ftspec"]); ?>
+                        </div>
+                        <?php if(is_array($felgptdowns)): $i = 0; $__LIST__ = $felgptdowns;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-12" style="margin:10px 0;">
+                                <a href="/newrflinker/Public/Uploads/<?php echo ($vo['down']); ?>" target="view_window" style="display: inline-block;width:100%;word-break: break-all; ">
+                                    <button style="display: inline-block;width:100%;" type="button" class="downloadbutton"><?php echo ($vo['downname']); ?><i class="icon iconfont icon-xiazai"></i></button>
+                                </a>
+                            </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="thumbnail">
+                            <img src="/newrflinker<?php echo ($felgxiangqing["ftimg"]); ?>" alt="" style="border:none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="col-xs-12">
+            <div class="footer">
+                <div class="font-footer"><?php echo (L("ICPname")); ?></div>
+            </div>
+        </footer>
+    </div>
+    </main>
+    <script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/jquery.min.js"></script>
+    <script type="text/javascript" src="/newrflinker/Public/qiantai/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/newrflinker/Public/qiantai/js/nav.js"></script>
+    <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+    <script type="text/javascript" src="/newrflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
+    <!-- 搜索预览插件 -->
+    <script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/aircity.js"></script>
+    <script src="js/main.js"></script>
+    <script src="layer/mobile/layer.js"></script>
+    <script type="text/javascript" src="/newrflinker/Public/qiantai/js/connectUs.js"></script>
+    <script type="text/javascript">
+    //点击显示/隐藏
+    (function() {
+        $(".classification span").click(function() {
+            $(".classification ul").toggle(1000);
+        });
+    })();
+    </script>
+</body>
 
-
-				<div class="news">
-					<div class="class-case">
-						<h2></h2>
-					</div>
-					<div class="container">
-						<div class="row news-content">
-							
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="col-md-12" style="border-bottom: 1px solid">
-									<h2><?php echo ($felgxiangqing["ftname"]); ?></h2>
-									<p><?php echo ($felgxiangqing["fttitle"]); ?></p>
-								</div>
-								<div class="col-md-12">
-									<?php echo ($felgxiangqing["ftspec"]); ?>
-								</div>
-								 <?php if(is_array($felgptdowns)): $i = 0; $__LIST__ = $felgptdowns;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-12" style="margin:10px 0;">
-									   
-											  <a href="/newrflinker/Public/Uploads/<?php echo ($vo['down']); ?>" target="view_window" style="display: inline-block;width:100%;word-break: break-all; "><button style="display: inline-block;width:100%;" type="button" class="downloadbutton"><?php echo ($vo['downname']); ?><i class="icon iconfont icon-xiazai"></i></button></a>
-										
-										
-									</div><?php endforeach; endif; else: echo "" ;endif; ?>
-								
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="thumbnail">
-										<img src="/newrflinker<?php echo ($felgxiangqing["ftimg"]); ?>" alt="" style="border:none;" >
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-
-				<footer class="col-xs-12">
-					<div class="footer">
-						<div class="font-footer"><?php echo (L("ICPname")); ?></div>
-					</div>
-				</footer>
-			</div>
-		
-		</main>	
-
-
-			
-						
-		<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/jquery.min.js"></script>
-		<script type="text/javascript" src="/newrflinker/Public/qiantai/js/bootstrap.js"></script>
-		<script type="text/javascript" src="/newrflinker/Public/qiantai/js/nav.js"></script>
-		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-		<script type="text/javascript" src="/newrflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
-		<!-- 搜索预览插件 -->
-		<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/aircity.js"></script>
-		<script src="js/main.js"></script>
-		<script src="layer/mobile/layer.js"></script>
-		<script type="text/javascript" src="/newrflinker/Public/qiantai/js/connectUs.js"></script>
-
-		<script type="text/javascript">
-			//点击显示/隐藏
-	    	(function(){
-	    		$(".classification span").click(function(){
-	    			$(".classification ul").toggle(1000);
-	    		});
-	    	})();
-		</script>
-	</body>
 </html>

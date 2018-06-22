@@ -1,62 +1,62 @@
 <?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<!-- 优先使用 IE 最新版本和 Chrome -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<!-- 为移动设备添加 viewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-		<!--忽略页面中的数字识别为电话，忽略email识别-->
-		<meta name="format-detection" content="telphone=no, email=no" />
-		<title>产品</title>
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/header_nav.css" />
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/index.css" />
-		<!-- 联系我们 -->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/contact_us.css">
-		<!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8" />
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 为移动设备添加 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别-->
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <title>产品</title>
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/header_nav.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/index.css" />
+    <!-- 联系我们 -->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/contact_us.css">
+    <!--[if lt IE 9]>
 			<script type="text/javascript" src="js/html5shiv.min.js"></script>
 			<script type="text/javascript" src="js/respond.min.js"></script>
 	    <![endif]-->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/media.css" />
-		<!-- new css by wys -->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/new.css" />
-		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/headerstyle.css">
-		<!-- 搜索预览插件样式-->
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/search_demo.css">
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/Case.css">
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/iconfont.css">
-		<link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/swiper/swiper.min.css">
-		<style type="text/css">
-			@media screen and (max-width: 768px){
-				.navbar-default {
-				    background: #bdbdbd;
-
-				}
-				/*#carousel-example-generic{
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/media.css" />
+    <!-- new css by wys -->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/new.css" />
+    <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/headerstyle.css">
+    <!-- 搜索预览插件样式-->
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/search_demo.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/Case.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/swiper/swiper.min.css">
+    <style type="text/css">
+    @media screen and (max-width: 768px) {
+        .navbar-default {
+            background: #bdbdbd;
+        }
+        /*#carousel-example-generic{
 					margin-top:85px;
 				}*/
+    }
 
-			
-			}
-			
-			.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-			    bottom:0px;
-			}
-			.uhf-wrapper .uhf-item{
-				display: inline-block;
-				width: 100%;
-			}
-		</style>
-	</head>
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 0px;
+    }
 
-	<body>
-		<main class="max-width-index">
-	       <main class="max-width-index">
+    .uhf-wrapper .uhf-item {
+        display: inline-block;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <main class="max-width-index">
+        <main class="max-width-index">
     <!--导航-->
     <nav class="navbar navbar-default navbar-fixed-top top-box">
         <div class="container">
@@ -99,86 +99,62 @@
         <!-- /.container -->
     </nav>
     <!--/ 导航-->
-
-			<!-- ios头部固定框 -->
-			<div class="scrollable" id="scrollable">
-			
-
-				<!--产品展示-->		
-				<div class=" news_content uhf-wrapper">
-			        <div class="col-sx-12 classification container">
-			            
-						 <?php if(is_array($hztype_arr)): $i = 0; $__LIST__ = $hztype_arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 col-xs-12">
-									<span class="uhf-item"> <?php echo ($vo['hz']['hzname']); ?> <i class=" icon iconfont icon-jiantou"></i></span>
-									<ul class="list-unstyled ">
-										<?php if(is_array($vo['type'])): $i = 0; $__LIST__ = $vo['type'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voer): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Feighztype/index');?>?typeid=<?php echo ($voer['id']); ?>&fid=<?php echo ($voer['hzid']); ?>" id="<?php echo ($voer['id']); ?>"><?php echo ($voer['fgtypename']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-									</ul>
-								</div><?php endforeach; endif; else: echo "" ;endif; ?>
-						
-			        </div>
-			    </div>
-				<!--产品展示结束-->
-			
-			
-			
-			
-	     <div class="details container" style="margin:auto;margin-left:0;margin-right:0;padding:0;">
-          
-		  
-		    
-					<div class="panel-group" id="accordion">
-					<?php if(is_array($hztypes_arr)): $j = 0; $__LIST__ = $hztypes_arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($j % 2 );++$j;?><div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title text-center">
+        <!-- ios头部固定框 -->
+        <div class="scrollable" id="scrollable">
+            <!--产品展示-->
+            <div class=" news_content uhf-wrapper">
+                <div class="col-sx-12 classification container">
+                    <?php if(is_array($hztype_arr)): $i = 0; $__LIST__ = $hztype_arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 col-xs-12">
+                            <span class="uhf-item"> <?php echo ($vo['hz']['hzname']); ?> <i class=" icon iconfont icon-jiantou"></i></span>
+                            <ul class="list-unstyled ">
+                                <?php if(is_array($vo['type'])): $i = 0; $__LIST__ = $vo['type'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voer): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Feighztype/index');?>?typeid=<?php echo ($voer['id']); ?>&fid=<?php echo ($voer['hzid']); ?>" id="<?php echo ($voer['id']); ?>"><?php echo ($voer['fgtypename']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </ul>
+                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+            </div>
+            <!--产品展示结束-->
+            <div class="details container" style="margin:auto;margin-left:0;margin-right:0;padding:0;">
+                <div class="panel-group" id="accordion">
+                    <?php if(is_array($hztypes_arr)): $j = 0; $__LIST__ = $hztypes_arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($j % 2 );++$j;?><div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title text-center">
 									<a data-toggle="collapse" data-parent="#accordion" 
 									   href="#<?php echo (str_replace(' ','',$vo['type']['fgtypename'])); ?>">
 										 <?php echo ($vo['type']['fgtypename']); ?> 
 									</a>
 								</h4>
-							</div>
-							<div id="<?php echo (str_replace(' ','',$vo['type']['fgtypename'])); ?>" class="panel-collapse collapse <?php if($typeid == $vo['type']['id']): ?>in<?php endif; ?>">
-								<div class="row">
-									<div class="col-md-10 col-xs-12 col-sm-12">FEIG- Handheld Leser sind kabelgebunden sowie mit Bluetooth- oder Ethernet-Schnittstellen erhältlich. Haupteinsatzfelder sind Inventuren in verschiedenen Bereichen wie Bibliotheken, Handel oder Logistik.</div>
-								</div>
-									<div class="product-banner swiper-container">
-												<div class="swiper-wrapper">
-												    
-													<?php if(is_array($vo['pt'])): $i = 0; $__LIST__ = $vo['pt'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pt): $mod = ($i % 2 );++$i;?><div class="swiper-slide">
-															<a href="projectDeta.html">
-																<div class="product-img">
-																	<a target="_top" href="<?php echo U('Productdetails/index');?>?type=1&&id=<?php echo ($pt['id']); ?>"><img src="/newrflinker<?php echo ($pt['ftimg']); ?>" alt="product"/></a>
-																</div>
-															</a>
-															<a href="projectDeta.html">
-																<div class="product-text">
-																	<a target="_top" href="<?php echo U('Productdetails/index');?>?type=1&&id=<?php echo ($pt['id']); ?>"><span><?php echo ($pt['ftname']); ?><i class="icon iconfont icon-fanhuiyou""></i></span></a>
-																	<div><?php echo ($pt['ftitle']); ?></div>
-																</div> 
-															</a>   
-														</div><?php endforeach; endif; else: echo "" ;endif; ?>
-																										
-												</div>
-											<!-- 分页器 -->
-												<div class="swiper-pagination"></div>
-												<div class="swiper-button-prev"></div>
-												<div class="swiper-button-next"></div>
-									</div>
-							</div>
-						</div><?php endforeach; endif; else: echo "" ;endif; ?>
-					</div>
-					
-		    			
-					
-					
-					
-					
-							
-
-		</div>
-				<!--产品折叠div结束-->
-
-
-			<!--联系我们-->
+                            </div>
+                            <div id="<?php echo (str_replace(' ','',$vo['type']['fgtypename'])); ?>" class="panel-collapse collapse <?php if( $typeid==$ vo[ 'type'][ 'id'] ): ?>in<?php endif; ?>">
+                                <div class="row">
+                                    <div class="col-md-10 col-xs-12 col-sm-12">FEIG- Handheld Leser sind kabelgebunden sowie mit Bluetooth- oder Ethernet-Schnittstellen erhältlich. Haupteinsatzfelder sind Inventuren in verschiedenen Bereichen wie Bibliotheken, Handel oder Logistik.</div>
+                                </div>
+                                <div class="product-banner swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <?php if(is_array($vo['pt'])): $i = 0; $__LIST__ = $vo['pt'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pt): $mod = ($i % 2 );++$i;?><div class="swiper-slide">
+                                                <a href="projectDeta.html">
+                                                    <div class="product-img">
+                                                        <a target="_top" href="<?php echo U('Productdetails/index');?>?type=1&&id=<?php echo ($pt['id']); ?>"><img src="/newrflinker<?php echo ($pt['ftimg']); ?>" alt="product"/></a>
+                                                    </div>
+                                                </a>
+                                                <a href="projectDeta.html">
+                                                    <div class="product-text">
+                                                        <a target="_top" href="<?php echo U('Productdetails/index');?>?type=1&&id=<?php echo ($pt['id']); ?>"><span><?php echo ($pt['ftname']); ?><i class="icon iconfont icon-fanhuiyou""></i></span></a>
+                                                        <div><?php echo ($pt['ftitle']); ?></div>
+                                                    </div>
+                                                </a>
+                                            </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    </div>
+                                    <!-- 分页器 -->
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+            </div>
+            <!--产品折叠div结束-->
+            <!--联系我们-->
 				<div class="contact-us col-xs-12" style="background:#fff;">
 					<div class="container">
 						<div class="row">
@@ -270,19 +246,19 @@
 	    	})();
 
     	// 轮播
-	        var swiper = new Swiper('.swiper-container', {   
-	          loop : false,                     
-	            slidesPerView:3,
-	            spaceBetween:10,
+	        var swiper = new Swiper('.swiper-container', { 
+	        	slidesPerView: 2,
+      			spaceBetween: 10,
+      			slidesPerGroup: 2,                     
 	            breakpoints:{
-	            	1400: {
-			          slidesPerView: 4,
-			          spaceBetween: 10,
-			        },
-	                1024: {
-			          slidesPerView: 3,
-			          spaceBetween: 10,
-			        },
+	          //   	1400: {
+			        //   slidesPerView: 4,
+			        //   spaceBetween: 10,
+			        // },
+	          //       1024: {
+			        //   slidesPerView: 3,
+			        //   spaceBetween: 10,
+			        // },
 			        700: {
 			          slidesPerView: 2,
 			          spaceBetween: 20,
@@ -371,10 +347,6 @@ $(function() {
             	});	    	
 })
 </script>
-			
-			
+</body>
 
-		
-		
-	</body>
 </html>

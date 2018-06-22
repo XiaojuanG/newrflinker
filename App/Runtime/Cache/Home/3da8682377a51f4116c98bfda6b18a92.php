@@ -32,6 +32,7 @@
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 5;
+      line-height: 20px;
     }
     .thumbnail-industry{
         box-shadow: 3px 1px 10px #c7c4c4;
@@ -131,7 +132,7 @@
                                     <div class="thumbnail thumbnail-industry "> <a href="<?php echo U('Vocationlistmain/index');?>?id=<?php echo ($vo['id']); ?>">										   <img src="/newrflinker<?php echo ($vo['imgiy']); ?>" alt=""  class="img-responsive" />										</a>
                                         <div class="caption hidden-xs">
                                             <h4 style="margin-top:2px"><a style="color:#4767f4" href="<?php echo U('Vocationlistmain/index');?>?id=<?php echo ($vo['id']); ?>"><?php echo ($vo['nameiy']); ?></a></h4>
-                                            <p class="descript" style="    height: 80px;font-size: 13px; "> <?php echo ($vo['title']); ?></p>
+                                            <p class="descript" style="    height: 100px;font-size: 13px; "> <?php echo ($vo['title']); ?></p>
                                             <div class="trade" style="border-top: 1px solid #eee;">
                                                 <p><a href=""></a></p>
                                             </div>

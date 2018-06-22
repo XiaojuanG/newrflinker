@@ -84,6 +84,9 @@
 				.details .container div.col-md-5{padding:0;}
 				.news{background:#fff!important;}
 			}
+			.classic-case{
+				padding: 40px
+			}
 		</style>
 	<body>
 		<main class="max-width-index">
@@ -164,7 +167,7 @@
       </div>
 
 
-          <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="col-lg-4 col-md-4 col-sm-4 classic-case">
             <div class="thumbnail">
               <a href="">
                 <?php if($iyjieshaos['anli1show'] == 1): ?><img src="/newrflinker<?php echo ($iyjieshaos['anli1']); ?>" alt="" class="img-responsive"><?php endif; ?>
@@ -174,7 +177,7 @@
             </div>
           </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="col-lg-4 col-md-4 col-sm-4 classic-case">
         <div class="thumbnail">
           <a href="">
             <?php if($iyjieshaos['anli2show'] == 1): ?><img src="/newrflinker<?php echo ($iyjieshaos['anli2']); ?>" alt="" class="img-responsive"><?php endif; ?>
@@ -185,7 +188,7 @@
       </div>
 
 
-      <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="col-lg-4 col-md-4 col-sm-4 classic-case">
         <div class="thumbnail">
           <a href="">
             <?php if($iyjieshaos['anli3show'] == 1): ?><img src="/newrflinker<?php echo ($iyjieshaos['anli3']); ?>" alt="" class="img-responsive"><?php endif; ?>
