@@ -115,9 +115,9 @@ word-break:break-all;
 	padding-bottom: 20px;
 }
 
-.news .news-content {
+/*.news .news-content {
 	margin-top: 40px;
-}
+}*/
 
 .news .news-content p {
 	margin-bottom: 0;
@@ -764,9 +764,9 @@ word-break:break-all;
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	.news .news-content {
+	/*.news .news-content {
 		margin-top: 95px;
-	}
+	}*/
 	.news .news-content .caption {
 		padding: 0px 9px 20px 9px;
 	}

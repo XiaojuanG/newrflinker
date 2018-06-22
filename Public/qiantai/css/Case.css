@@ -122,13 +122,14 @@
 }
 
 .product-text{
+    width: 50%;
+    margin: 0 auto;
     height: 145px;
-    text-align: justify;
     background-color: #e5e8eb;
     font-weight: 600;
     padding: 15px;
 }
-.product-text>div{width:100%;word-wrap:break-word;}
+.product-text>div{width:100%;word-wrap:break-word;font-size: 13px;}
 .product-text>span{color:#00aaf0;}
 .product-img{margin:auto;}
 .product-img a{display:inline-block;width:100%;}
