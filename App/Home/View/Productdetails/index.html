@@ -53,6 +53,7 @@
 </head>
 
 <body>
+    <main class="max-width-index">
     <include file="Public/header" />
     <div class="scrollable" id="scrollable">
         <!--产品展示-->
@@ -100,13 +101,10 @@
                 </div>
             </div>
         </div>
-        <footer class="col-xs-12">
-            <div class="footer">
-                <div class="font-footer">{$Think.lang.ICPname}</div>
-            </div>
-        </footer>
+        <include file="Public/footercontent" />
     </div>
     </main>
+    
     <script type="text/javascript" src="__PUBLIC__/qiantai/search_demo/jquery.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/qiantai/js/bootstrap.js"></script>
     <script type="text/javascript" src="__PUBLIC__/qiantai/js/nav.js"></script>
