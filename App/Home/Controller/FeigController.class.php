@@ -71,8 +71,9 @@ class FeigController extends ComController {
 					$hztypes_arr[$key]['pt'][] = $v;
 				}
 			}
+                        $hztypes_arr[$key]['ptcount']=count($hztypes_arr[$key]['pt']);
 		}
-		//print_r($hztypes_arr);exit;
+		
 		$this -> assign('hztypes_arr',$hztypes_arr);
 	    
 		
