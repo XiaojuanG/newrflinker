@@ -18,9 +18,9 @@
     <!-- 联系我们 -->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/contact_us.css">
     <!--[if lt IE 9]>
-			<script type="text/javascript" src="js/html5shiv.min.js"></script>
-			<script type="text/javascript" src="js/respond.min.js"></script>
-	    <![endif]-->
+            <script type="text/javascript" src="js/html5shiv.min.js"></script>
+            <script type="text/javascript" src="js/respond.min.js"></script>
+        <![endif]-->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/media.css" />
     <!-- new css by wys -->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/new.css" />
@@ -37,8 +37,8 @@
             background: #bdbdbd;
         }
         /*#carousel-example-generic{
-					margin-top:85px;
-				}*/
+                    margin-top:85px;
+                }*/
     }
 
     .lf-wrapper .lf-item {
@@ -75,11 +75,11 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title text-center">
-									<a data-toggle="collapse" data-parent="#accordion" 
-									   href="{$vo['type']['fgtypename']|str_replace=' ','',###}">
-										 {$vo['type']['fgtypename']}
-									</a>
-								</h4>
+                                    <a data-toggle="collapse" data-parent="#accordion" 
+                                       href="#{$vo['type']['fgtypename']|str_replace=' ','',###}">
+                                         {$vo['type']['fgtypename']} 
+                                    </a>
+                                </h4>
                             </div>
                             <div id="{$vo['type']['fgtypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$j eq 1'>in<else/></if>">
                                 <div class="product-banner swiper-container">
@@ -108,9 +108,9 @@
             </div>
             <!--产品折叠div结束-->
             <include file="Public/footercase" />
- </div>
-    </main>  
-    <include file="Public/footercontent" />         
+        </div>
+    </main>
+    <include file="Public/footercontent" />
 </body>
 
 </html>
