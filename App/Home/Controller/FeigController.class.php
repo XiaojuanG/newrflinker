@@ -73,10 +73,10 @@ class FeigController extends ComController {
 			}
                         if(count($hztypes_arr[$key]['pt'])>4){
                             $hztypes_arr[$key]['ptcount']=4;
-                            $hztypes_arr[$key]['size']=-200/$hztypes_arr[$key]['ptcount'];
+                            $hztypes_arr[$key]['size']=-(5-$hztypes_arr[$key]['ptcount'])*50;
                         }else{
                             $hztypes_arr[$key]['ptcount']=count($hztypes_arr[$key]['pt']);
-                            $hztypes_arr[$key]['size']=-200/$hztypes_arr[$key]['ptcount'];
+                            $hztypes_arr[$key]['size']=-(5-$hztypes_arr[$key]['ptcount'])*50;
                         }
                         
 		}
