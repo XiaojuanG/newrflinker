@@ -1,140 +1,113 @@
 ﻿<!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<!-- 优先使用 IE 最新版本和 Chrome -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<!-- 为移动设备添加 viewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-		<!--忽略页面中的数字识别为电话，忽略email识别-->
-		<meta name="format-detection" content="telphone=no, email=no" />
-		<title>{$Think.lang.title_Product}</title>
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/header_nav.css" />
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/index.css" />
-		<!-- 联系我们 -->
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/contact_us.css">
-		<!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8" />
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 为移动设备添加 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别-->
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <title>{$Think.lang.title_Product}</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/header_nav.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/index.css" />
+    <!-- 联系我们 -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/contact_us.css">
+    <!--[if lt IE 9]>
 			<script type="text/javascript" src="js/html5shiv.min.js"></script>
 			<script type="text/javascript" src="js/respond.min.js"></script>
 	    <![endif]-->
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/media.css" />
-		<!-- new css by wys -->
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/new.css" />
-		<!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/headerstyle.css">
-		<!-- 搜索预览插件样式-->
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/search_demo.css">
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/Case.css">
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/iconfont.css">
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/swiper/swiper.min.css">
-		<style type="text/css">
-			@media screen and (max-width: 768px){
-				.navbar-default {
-				    background: #bdbdbd;
-
-				}
-				/*#carousel-example-generic{
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/media.css" />
+    <!-- new css by wys -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/new.css" />
+    <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/headerstyle.css">
+    <!-- 搜索预览插件样式-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/search_demo.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/Case.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/swiper/swiper.min.css">
+    <style type="text/css">
+    @media screen and (max-width: 768px) {
+        .navbar-default {
+            background: #bdbdbd;
+        }
+        /*#carousel-example-generic{
 					margin-top:85px;
 				}*/
+    }
 
-			
-			}
-			.lf-wrapper .lf-item{
-				display: inline-block;
-				width: 100%;
-			}
-		</style>
-	</head>
+    .lf-wrapper .lf-item {
+        display: inline-block;
+        width: 100%;
+    }
+    </style>
+</head>
 
-	<body>
-		<main class="max-width-index">
-	       <include file="Public/header"/>
-
-			<!-- ios头部固定框 -->
-			<div class="scrollable" id="scrollable">
-			
-
-				<!--产品展示-->		
-				<div class=" news_content lf-wrapper">
-			        <div class="col-sx-12 classification container">
-			            
-						 <volist name="hztype_arr" id="vo">
-								<div class="col-md-4 col-xs-12">
-									<span class="lf-item"> {$vo['hz']['hzname']} <i class=" icon iconfont icon-jiantou"></i></span>
-									<ul class="list-unstyled ">
-										<volist name="vo['type']" id="voer">
-											<li><a href="{:U('Feighztype/index')}?typeid={$voer['id']}&fid={$voer['hzid']}" id="{$voer['id']}">{$voer['fgtypename']}</a></li>
-										</volist>
-									</ul>
-								</div>
-                         </volist>
-						
-			        </div>
-			    </div>
-				<!--产品展示结束-->
-			
-			
-			
-			
-	     <div class="details container" style="margin:auto;margin-left:0;margin-right:0;padding:0;">
-          
-		  
-		    
-					<div class="panel-group" id="accordion">
-					<volist name="hztypes_arr" id="vo" key="j">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title text-center">
+<body>
+    <main class="max-width-index">
+        <include file="Public/header" />
+        <!-- ios头部固定框 -->
+        <div class="scrollable" id="scrollable">
+            <!--产品展示-->
+            <div class=" news_content lf-wrapper">
+                <div class="col-sx-12 classification container">
+                    <volist name="hztype_arr" id="vo">
+                        <div class="col-md-4 col-xs-12">
+                            <span class="lf-item"> {$vo['hz']['hzname']} <i class=" icon iconfont icon-jiantou"></i></span>
+                            <ul class="list-unstyled ">
+                                <volist name="vo['type']" id="voer">
+                                    <li><a href="{:U('Feighztype/index')}?typeid={$voer['id']}&fid={$voer['hzid']}" id="{$voer['id']}">{$voer['fgtypename']}</a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <!--产品展示结束-->
+            <div class="details container" style="margin:auto;margin-left:0;margin-right:0;padding:0;">
+                <div class="panel-group" id="accordion">
+                    <volist name="hztypes_arr" id="vo" key="j">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title text-center">
 									<a data-toggle="collapse" data-parent="#accordion" 
 									   href="#{$vo['type']['fgtypename']|str_replace=' ','',###}">
 										 {$vo['type']['fgtypename']} 
 									</a>
 								</h4>
-							</div>
-							<div id="{$vo['type']['fgtypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$j eq 1'>in<else/></if>">
-									<div class="product-banner swiper-container">
-												<div class="swiper-wrapper">
-												    
-													<volist name="vo['pt']" id="pt">
-														<div class="swiper-slide">
-																<div class="product-img">
-																	<a target="_top" href="{:U('Productdetails/index')}?type=1&&id={$pt['id']}"><img src="__ROOT__{$pt['ftimg']}" alt="product"/></a>
-																</div>
-																<div class="product-text">
-																	<a target="_top" href="{:U('Productdetails/index')}?type=1&&id={$pt['id']}"><span>{$pt['ftname']}<i class="icon iconfont icon-fanhuiyou""></i></span></a>
-																	<div>{$pt['ftitle']}</div>
-																</div> 
-														</div>
-													</volist>
-																										
-												</div>
-											<!-- 分页器 -->
-												<div class="swiper-pagination"></div>
-												<div class="swiper-button-prev"></div>
-												<div class="swiper-button-next"></div>
-									</div>
-							</div>
-						</div>  
-						 </volist>
-					</div>
-					
-		    			
-					
-					
-					
-					
-							
+                            </div>
+                            <div id="{$vo['type']['fgtypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$j eq 1'>in<else/></if>">
+                                <div class="product-banner swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <volist name="vo['pt']" id="pt">
+                                            <div class="swiper-slide">
+                                                <div class="product-img">
+                                                    <a target="_top" href="{:U('Productdetails/index')}?type=1&&id={$pt['id']}"><img src="__ROOT__{$pt['ftimg']}" alt="product"/></a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <a target="_top" href="{:U('Productdetails/index')}?type=1&&id={$pt['id']}"><span>{$pt['ftname']}<i class="icon iconfont icon-fanhuiyou""></i></span></a>
+                                                    <div>{$pt['ftitle']}</div>
+                                                </div>
+                                            </div>
+                                        </volist>
+                                    </div>
+                                    <!-- 分页器 -->
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <!--产品折叠div结束-->
+            <include file="Public/footercase" />
+</body>
 
-		</div>
-				<!--产品折叠div结束-->
-
-
-			<include file="Public/footercase" />
-		
-		
-	</body>
 </html>
