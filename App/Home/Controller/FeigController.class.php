@@ -64,15 +64,23 @@ class FeigController extends ComController {
 		
 		$hztypes_arr = [];
 		foreach($typeyi as $key => $value){
-			
+			$hztypes_arr[$key]['type'] = $value;
 			foreach($hztypept as $k=>$v){
-				$hztypes_arr[$key]['type'] = $value;
+				
 				if($v['tid']==$value['id']){	
 					$hztypes_arr[$key]['pt'][] = $v;
 				}
 			}
+                        if(count($hztypes_arr[$key]['pt'])>4){
+                            $hztypes_arr[$key]['ptcount']=4;
+                            $hztypes_arr[$key]['size']=-200/$hztypes_arr[$key]['ptcount'];
+                        }else{
+                            $hztypes_arr[$key]['ptcount']=count($hztypes_arr[$key]['pt']);
+                            $hztypes_arr[$key]['size']=-200/$hztypes_arr[$key]['ptcount'];
+                        }
+                        
 		}
-		//print_r($hztypes_arr);exit;
+		
 		$this -> assign('hztypes_arr',$hztypes_arr);
 	    
 		

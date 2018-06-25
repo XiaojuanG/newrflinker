@@ -87,7 +87,10 @@
 		  
 		    
 					<div class="panel-group" id="accordion">
+                        <script type="text/javascript" src="__PUBLIC__/qiantai/search_demo/jquery.min.js"></script>
+                        <script type="text/javascript" src="__PUBLIC__/qiantai/swiper/swiper.min.js"></script>
 					<volist name="hztypes_arr" id="vo" key="j">
+                                            
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title text-center">
@@ -97,8 +100,8 @@
 									</a>
 								</h4>
 							</div>
-							<div id="{$vo['type']['rflinkertypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$j eq 1'>in<else/></if>">
-									<div class="product-banner swiper-container">
+							<div id="{$vo['type']['rflinkertypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$vo["ptcount"] gt 0 and $j eq 1'>in<else/></if>">
+									<div class="product-banner swiper-container typeswiper{$vo['type']['id']}">
 												<div class="swiper-wrapper">
 												    
 													<volist name="vo['pt']" id="pt">
@@ -119,12 +122,61 @@
 																										
 												</div>
 											<!-- 分页器 -->
-												<div class="swiper-pagination"></div>
-												<div class="swiper-button-prev"></div>
-												<div class="swiper-button-next"></div>
+												<div class="swiper-pagination type-pagination{$vo['type']['id']}"></div>
+                                    <div class="swiper-button-prev type-prev{$vo['type']['id']}"></div>
+                                    <div class="swiper-button-next type-next{$vo['type']['id']}"></div>
 									</div>
 							</div>
 						</div>  
+                                           
+                         <if condition="$vo['ptcount'] gt 0">
+                         <script type="text/javascript">
+    	
+
+    	// 轮播
+       
+	        var swiper = new Swiper('.typeswiper{$vo[\'type\'][\'id\']}', { 
+	        	slidesPerView:{$vo['ptcount']},
+      			spaceBetween: {$vo['size']},
+//      			slidesPerGroup: 3,                     
+	            breakpoints:{
+	          //   	1400: {
+			        //   slidesPerView: 4,
+			        //   spaceBetween: 10,
+			        // },
+	          //       1024: {
+			        //   slidesPerView: 3,
+			        //   spaceBetween: 10,
+			        // },
+                                800:{
+			          slidesPerView: 2,
+			          spaceBetween: -100,
+			        },
+			        700: {
+			          slidesPerView: 2,
+			          spaceBetween: -70,
+			        },
+			        480: {
+			          slidesPerView: 1,
+			          spaceBetween: 10,
+			        }
+
+	            },
+	            observer:true,
+	            observeParents:true,
+	            navigation: {
+	                nextEl: '.type-next{$vo[\'type\'][\'id\']}',
+	                prevEl: '.type-prev{$vo[\'type\'][\'id\']}',
+	              },
+	            
+	            pagination: {
+	                el: '.type-pagination{$vo[\'type\'][\'id\']}',
+	                type:'bullets',
+	                clickable :true,
+	            },	      
+			});
+  </script>
+  </if>
 						 </volist>
 					</div>
 					
