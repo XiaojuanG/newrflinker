@@ -70,7 +70,8 @@ class RflinkerhztypeController extends ComController {
 		
 		
 		
-		
+		//如果进入该控制器需要显示参数，则需要额外渲染参数变量
+                $this->assign('commom_field','&typeid='.$typeid.'&fid='.$fid);
 		$this -> assign('typeid',$typeid);
 		$this->display(); 
 		
