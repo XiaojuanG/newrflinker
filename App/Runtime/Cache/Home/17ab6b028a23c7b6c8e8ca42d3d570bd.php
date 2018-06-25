@@ -109,7 +109,7 @@
   <div class="container">
     <div class="row pro-content">
       <div class="common-title">
-        <h2>——<?php echo (L("index_Industrylist")); ?>——</h2>
+        <h2><?php echo (L("index_Industrylist")); ?></h2>
       </div>
       <?php if(is_array($iyimg)): $i = 0; $__LIST__ = $iyimg;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-lg-3 col-md-3 col-sm-4 ">
               <div class="thumbnail thumbnail-industry">
@@ -141,7 +141,7 @@
     <div class="container">
         <div class="row">
             <div class="common-title">
-                <h2>—— <?php echo (L("index_FormTitle")); ?>  ——</h2> </div>
+                <h2><?php echo (L("index_FormTitle")); ?></h2> </div>
             <div class="col-lg-6 col-md-6">
                 <p class="font-title"><?php echo (L("index_PleseEmail")); ?></p>
                 <div>

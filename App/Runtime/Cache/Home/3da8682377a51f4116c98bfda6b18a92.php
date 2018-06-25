@@ -43,6 +43,7 @@
     .common-title h2{
         margin-bottom: 20px;
     }
+    
     </style> 
 </head>
 
@@ -115,7 +116,7 @@
                     <div class="container">
                         <div class="row news-content">
                             <div class="common-title">
-                                <h2>——<?php echo (L("index_Recommend")); ?>——</h2> </div>
+                                <h2><?php echo (L("index_Recommend")); ?></h2> </div>
                             <?php if(is_array($felghzs)): $i = 0; $__LIST__ = $felghzs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><div class="col-lg-4 col-md-4 col-sm-4">
                                     <div class="thumbnail"> <a href="<?php echo U('Feighztype/Index');?>?typeid=<?php echo ($val['typeid']); ?>&fid=<?php echo ($val['id']); ?>">												<img src="/newrflinker<?php echo ($val['fghzimg']); ?>" alt="" class="img-responsive">												<p class="font-p-lf"><?php echo ($val['fghz']); ?><span class="font-span"><?php echo ($val['fghztitle']); ?></span></p>											</a> </div>
                                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -127,7 +128,7 @@
                     <div class="container">
                         <div class="row pro-content">
                             <div class="common-title">
-                                <h2>——<?php echo (L("index_Industry")); ?>——</h2> </div>
+                                <h2><?php echo (L("index_Industry")); ?></h2> </div>
                             <?php if(is_array($iyimg)): $i = 0; $__LIST__ = $iyimg;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-lg-3 col-md-3 col-sm-4 ">
                                     <div class="thumbnail thumbnail-industry "> <a href="<?php echo U('Vocationlistmain/index');?>?id=<?php echo ($vo['id']); ?>">										   <img src="/newrflinker<?php echo ($vo['imgiy']); ?>" alt=""  class="img-responsive" />										</a>
                                         <div class="caption hidden-xs">
@@ -148,7 +149,7 @@
     <div class="container">
         <div class="row">
             <div class="common-title">
-                <h2>—— <?php echo (L("index_FormTitle")); ?>  ——</h2> </div>
+                <h2><?php echo (L("index_FormTitle")); ?></h2> </div>
             <div class="col-lg-6 col-md-6">
                 <p class="font-title"><?php echo (L("index_PleseEmail")); ?></p>
                 <div>

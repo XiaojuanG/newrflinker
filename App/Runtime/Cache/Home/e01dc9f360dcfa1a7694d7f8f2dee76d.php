@@ -178,7 +178,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="common-title">
-								<h2>—— <?php echo (L("index_FormTitle")); ?>  ——</h2>
+								<h2><?php echo (L("index_FormTitle")); ?></h2>
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<p class="font-title"><?php echo (L("index_PleseEmail")); ?></p>
@@ -265,19 +265,19 @@
 	    	})();
 
     	// 轮播
-	        var swiper = new Swiper('.swiper-container', {   
-	          loop : false,                     
-	            slidesPerView:3,
-	            spaceBetween:10,
+	        var swiper = new Swiper('.swiper-container', { 
+	        	slidesPerView: 2,
+      			spaceBetween: 10,
+      			slidesPerGroup: 2,                     
 	            breakpoints:{
-	            	1400: {
-			          slidesPerView: 4,
-			          spaceBetween: 10,
-			        },
-	                1024: {
-			          slidesPerView: 3,
-			          spaceBetween: 10,
-			        },
+	          //   	1400: {
+			        //   slidesPerView: 4,
+			        //   spaceBetween: 10,
+			        // },
+	          //       1024: {
+			        //   slidesPerView: 3,
+			        //   spaceBetween: 10,
+			        // },
 			        700: {
 			          slidesPerView: 2,
 			          spaceBetween: 20,

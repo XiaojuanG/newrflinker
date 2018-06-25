@@ -10,25 +10,25 @@
   <!--忽略页面中的数字识别为电话，忽略email识别-->
   <meta name="format-detection" content="telphone=no, email=no" />
   <title><?php echo (L("title_About")); ?></title>
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/header_nav.css" />
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/index.css" />
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/aboutme.css">
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/header_nav.css" />
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/index.css" />
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/aboutme.css">
   <!-- 联系我们 -->
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/contact_us.css">
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/contact_us.css">
   <!--[if lt IE 9]>
-  <script type="text/javascript" src="/rflinker/Public/qiantai/js/html5shiv.min.js"></script>
-  <script type="text/javascript" src="/rflinker/Public/qiantai/js/respond.min.js"></script>
+  <script type="text/javascript" src="/newrflinker/Public/qiantai/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/newrflinker/Public/qiantai/js/respond.min.js"></script>
   <![endif]-->
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/media.css" />
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/media.css" />
   <!-- new css by wys -->
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/new.css" />
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/new.css" />
   <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/headerstyle.css">
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/headerstyle.css">
   <!-- 搜索预览插件样式-->
-  <link rel="stylesheet" type="text/css" href="/rflinker/Public/qiantai/css/search_demo.css">
+  <link rel="stylesheet" type="text/css" href="/newrflinker/Public/qiantai/css/search_demo.css">
   <style type="text/css">
     .about-news{
       padding-top: 0
@@ -43,10 +43,10 @@
     <nav class="navbar navbar-default navbar-fixed-top top-box">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="<?php echo U('Index/Index');?>">          <img src="/rflinker/Public/qiantai/img/login.png">        </a> </div>
+                <button type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="<?php echo U('Index/Index');?>">          <img src="/newrflinker/Public/qiantai/img/login.png">        </a> </div>
             <script>
-            window.__arr__ = { $new_live };
-            window.__arr2__ = { $new_live_all };
+            window.__arr__ = <?php echo ($new_live); ?>;
+            window.__arr2__ = <?php echo ($new_live_all); ?>;
             </script>
             <div class="form-group form-group-mobile visible-xs">
                 <input type="text" id="mobilearrcity" class="form-control" style="font-size:13px;" placeholder="<?php echo (L("head_search_select")); ?>">
@@ -54,7 +54,7 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-left top-nav">
-                    <li id="nav_toggle" style="line-height: 60px;width: 140px;text-align: center;margin-right: 10px"> <a href="<?php echo U('?lang=ch-cn');?>" class=" nav_toggle <?php echo (L("languagesclicks")); ?>" style="display: inline;float: left;">中文</a>| <a href="<?php echo U('?lang=en-us');?>" class="nav_toggle <?php echo (L("languagesclick")); ?>" style="display: inline;float: right;">EN</a> </li>
+                    <li id="nav_toggle" style="line-height: 60px;width: 140px;text-align: center;margin-right: 10px"> <a href="<?php echo U('');?>?lang=ch-cn<?php echo ($commom_field); ?>" class=" nav_toggle <?php echo (L("languagesclicks")); ?>" style="display: inline;float: left;">中文</a>| <a href="<?php echo U('');?>?lang=en-us<?php echo ($commom_field); ?>" class="nav_toggle <?php echo (L("languagesclick")); ?>" style="display: inline;float: right;">EN</a> </li>
                     <li <?php if($style_change == Index): ?>class="active"<?php endif; ?>> <a href="<?php echo U('Index/Index');?>" class="China">              <?php echo (L("head_index")); ?>              <span class="sr-only">(current)</span>            </a> </li>
                     <li class="dropdown "> <a class="dropdown-toggle China hidden-xs" data-toggle="dropdown" href="<?php echo U('Rflinker/Index');?>"><?php echo (L("title_Product")); ?></a>
                         <ul class="dropdown-menu" id="dropdown">
@@ -92,10 +92,10 @@
 
         <div class="row news-content" >
           <div class="common-title">
-            <h2>——<?php echo (L("index-company")); ?>——</h2>
+            <h2><?php echo (L("index-company")); ?></h2>
           </div>
           <div class="company">
-            <img src="/rflinker/Public/qiantai/img/about.png" style="width:100%;">
+            <img src="/newrflinker/Public/qiantai/img/about.png" style="width:100%;">
             <div class="company-abuot">
               <div class="common-title">
                 <h3>上海润斐电子科技有限公司</h3>
@@ -118,7 +118,7 @@
       <div class="container">
         <div class="row pro-content">
           <div class="common-title">
-            <h2>——<?php echo (L("company-visio")); ?>——</h2>
+            <h2><?php echo (L("company-visio")); ?></h2>
           </div>
 
           <p class="about-p" >企业愿景：体现了企业家的立场和信仰，是企业最高管理者头脑中的一种概念，是这些最高管理者对企业未来的设想。</p>
@@ -136,7 +136,7 @@
     <div class="container">
         <div class="row">
             <div class="common-title">
-                <h2>—— <?php echo (L("index_FormTitle")); ?>  ——</h2> </div>
+                <h2><?php echo (L("index_FormTitle")); ?></h2> </div>
             <div class="col-lg-6 col-md-6">
                 <p class="font-title"><?php echo (L("index_PleseEmail")); ?></p>
                 <div>
@@ -168,7 +168,7 @@
             </div>
             <div class="col-lg-6 qr-code">
                 <p class="font-title"><?php echo (L("index_Saoma")); ?></p>
-                <div> <img src="/rflinker/Public/qiantai/img/qr-code.png"> </div>
+                <div> <img src="/newrflinker/Public/qiantai/img/qr-code.png"> </div>
                 <div>
                     <p class="font-phone"><?php echo (L("index_FormTel")); ?>:</p>
                     <p class="phone-num">139-1899-9394</p>
@@ -188,24 +188,31 @@
 </footer>
 </div>
 </main>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/jquery.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/bootstrap.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/search_demo/jquery.min.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/nav.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/jquery.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/bootstrap.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/jquery.min.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/nav.js"></script>
 <!-- ios下头部固定方案防止头部随着页面上拉滚动 -->
-<script type="text/javascript" src="/rflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
-<script src="/rflinker/Public/qiantai/js/main.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/iostopfixed/scrollfix.js"></script>
+<script src="/newrflinker/Public/qiantai/js/main.js"></script>
 <!--		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js">--></script>
 <!-- 搜索预览插件 -->
-<script type="text/javascript" src="/rflinker/Public/qiantai/search_demo/aircity.js"></script>
-<script src="/rflinker/Public/qiantai/layer/mobile/layer.js"></script>
-<script type="text/javascript" src="/rflinker/Public/qiantai/js/connectUs.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/search_demo/aircity.js"></script>
+<script src="/newrflinker/Public/qiantai/layer/mobile/layer.js"></script>
+<script type="text/javascript" src="/newrflinker/Public/qiantai/js/connectUs.js"></script>
 <script>
 $(function() {
+    function checkUserName(username){
+        if ((/^[\u4E00-\u9FA5A-Za-z]+$/.test(username))) {
+            return true;
+        }else{
+            return false;
+        }
+    }
     function checkMobile(mobile) { 
     	if ((/^1[3|4|5|6|7|8]\d{9}$/.test(mobile))) { return true; } else { return false; } }
 	function isEmail(str) { 
-		if ((/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(str))) { return true; } else { return false; } } 
+		if ((/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(str))) { return true; } else { return false; } } 
 	// 联系我们
     $('.matter-button').on('click', function() {
     	var requestData = {
@@ -238,11 +245,13 @@ $(function() {
             			dataType: "json",							
             			data:{"SelectType":SelectType,"UserName":UserName,"UserTel":UserTel,"UserMail":UserMail,"TextSay":TextSay},							
             			success: function(data){                                 
-            				if(data == 1){							   									       layer.open({											  
+            				if(data.code == 1){							   									       
+                                layer.open({											  
             			content: '<?php echo (L("index_Formtijiaotrue")); ?>'
             			,skin: 'msg'												
             			,time: 2 //2秒后自动关闭	
-            			});					 								 
+            			});   
+                                window.location.href=window.location.href;
             			}										
             			}			                     
             			});        

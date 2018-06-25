@@ -142,8 +142,9 @@
 							</div>
 						</div>
 						<div class="row news-content" style="padding-top:25px;">
-							<div class="common-title">
-								<h2>—— <?php echo (L("supportservices_down")); ?> ——</h2>						
+							<div class="common-title-down" style="text-align: center;
+    margin-top: 50px;">
+								<h2><?php echo (L("supportservices_down")); ?></h2>						
 							</div>
 							<div class="col-xs-12">
 								
@@ -161,7 +162,7 @@
     <div class="container">
         <div class="row">
             <div class="common-title">
-                <h2>—— <?php echo (L("index_FormTitle")); ?>  ——</h2> </div>
+                <h2><?php echo (L("index_FormTitle")); ?></h2> </div>
             <div class="col-lg-6 col-md-6">
                 <p class="font-title"><?php echo (L("index_PleseEmail")); ?></p>
                 <div>
