@@ -69,7 +69,7 @@
 						 
 						 <volist name="hztype_arr" id="vo">
 								<div class="col-md-4 col-xs-12">
-									<span> {$vo['hz']['rflinkerhz']} <i class=" icon iconfont icon-jiantou"></i></span>
+									<span style="display: inline-block;width: 100%"> {$vo['hz']['rflinkerhz']} <i class=" icon iconfont icon-jiantou"></i></span>
 									<ul class="list-unstyled ">
 										<volist name="vo['type']" id="voer">
 											<li><a href="{:U('Rflinkerhztype/index')}?typeid=2&fid={$voer['hzid']}" id="{$voer['id']}">{$voer['fgtypename']}</a></li>
