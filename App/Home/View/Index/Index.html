@@ -43,6 +43,15 @@
     .common-title h2{
         margin-bottom: 20px;
     }
+    @media (max-width: 768px){
+        .carousel-inner .item{
+            height: 220px
+        }
+        .carousel-inner .item img{
+            height: 100%;
+            width: 100%;
+        }
+    }
     
     </style> 
 </head>
@@ -82,7 +91,7 @@
                             <div class="common-title">
                                 <h2>{$Think.lang.index_Recommend}</h2> </div>
                             <volist name="felghzs" id="val">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="col-lg-4 col-md-4 col-sm-4" style="padding:5px 50px">
                                     <div class="thumbnail"> <a href="{:U('Feighztype/Index')}?typeid={$val['typeid']}&fid={$val['id']}">												<img src="__ROOT__{$val['fghzimg']}" alt="" class="img-responsive">												<p class="font-p-lf">{$val['fghz']}<span class="font-span">{$val['fghztitle']}</span></p>											</a> </div>
                                 </div>
                             </volist>
@@ -96,7 +105,7 @@
                             <div class="common-title">
                                 <h2>{$Think.lang.index_Industry}</h2> </div>
                             <volist name="iyimg" id="vo">
-                                <div class="col-lg-3 col-md-3 col-sm-4 ">
+                                <div class="col-lg-3 col-md-3 col-sm-4 " style="padding: 20px">
                                     <div class="thumbnail thumbnail-industry "> <a href="{:U('Vocationlistmain/index')}?id={$vo['id']}">										   <img src="__ROOT__{$vo['imgiy']}" alt=""  class="img-responsive" />										</a>
                                         <div class="caption hidden-xs">
                                             <h4 style="margin-top:2px"><a style="color:#4767f4" href="{:U('Vocationlistmain/index')}?id={$vo['id']}">{$vo['nameiy']}</a></h4>
@@ -115,7 +124,7 @@
                 <include file="Public/footer" />
                 </div>
 </main>
-<include file="Public/footercontent" />
+
     
                 </body>
 
