@@ -16,14 +16,17 @@
 .container{width:100%;}
 .top-box .navbar-brand{height:90px;}
 .nav > li > a{padding:10px 9px;}
+
 }
 
 @media (min-width: 1012px){
 .navbar-toggle { display: none;}
-
+.nav-en-zh{display: none!important;}
 }
 @media (max-width: 1011px){
 .navbar-toggle {display: block;}
+.nav-en-zh{display: block!important;}
+.en-zh{display: none!important;}
 h1{margin-top:0px}
 .navbar-collapse.collapse li{float: none;}
 .navbar-header{width:100%; height: 50px;float:none;}
@@ -47,12 +50,6 @@ h1{margin-top:0px}
 @media (max-width: 991px){
 .contact-us{text-align: center;}
 .contact-us .qr-code{text-align: center; margin-top: 20px}
-.banner-text{
-	bottom: 64px;
-    left:110px;
-    width: 30%;
-    height: 40%
-}
 .banner-text p{
 	font-size: 24px;padding: 4px;
 }
@@ -78,12 +75,6 @@ h1{margin-top:0px}
 	.news-list .row{ margin-bottom:40px;}
 	.contact-us{text-align: center;}
 	.contact-us .qr-code{text-align: center; margin-top: 20px}
-	.banner-text{
-		bottom: 54px;
-	    left:74px;
-	    width: 35%;
-	    height: 45%;
-	}
 	.banner-text p{
 		font-size: 16px;padding: 4px;margin: 0 0 5px;
 	}
@@ -119,9 +110,12 @@ h1{margin-top:0px}
 .zjlist{ margin:10px 0px 0px; }
 .contact-us{text-align: center;}
 .contact-us .qr-code{text-align: center; margin-top: 20px}
-.banner-text{
-	bottom: 40px;
-    left:60px;
+.carousel-inner .item{
+            height: 274px;width: 640px;overflow: hidden;
+        }
+.banner-text-demo{
+	overflow: hidden;
+    padding-right: 30%;
 }
 .banner-text p{
 	font-size: 14px;padding: 4px;
@@ -139,10 +133,6 @@ h1{margin-top:0px}
 .navbar .container{padding: 0px;}
 .contact-us{text-align: center;}
 .contact-us .qr-code{text-align: center; margin-top: 20px}
-.banner-text{
-	bottom: 20px;
-    left:46px;
-}
 .banner-text p{
 	font-size: 10px;padding: 4px;
 }

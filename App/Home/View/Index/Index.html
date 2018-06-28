@@ -44,9 +44,6 @@
         margin-bottom: 20px;
     }
     @media (max-width: 768px){
-        .carousel-inner .item{
-            height: 220px
-        }
         .carousel-inner .item img{
             height: 100%;
             width: 100%;
@@ -79,7 +76,10 @@
                                 <div class="item">
                         </if> <img src="__ROOT__{$val['flashviewpc']}" alt="">
                         <div class="banner-text">
-                            <p>{$val['name']}<span>{$val['title']}</span> </p> <a href="{$val['fwlink']}" type="button" class="font-btn-a">{$Think.lang.Buy_Now}</a> </div>
+                            <div class="banner-text-demo" style="padding-top:16% ">
+                            <p>{$val['name']}<span>{$val['title']}</span> </p> <a href="{$val['fwlink']}" type="button" class="font-btn-a">{$Think.lang.Buy_Now}</a>
+                            </div>
+                         </div>
                         </div>
                     </volist>
                     </div>

@@ -35,7 +35,7 @@
 }
 .ac_result_tip{
 	border-bottom:1px dashed #666;
-	padding:3px;
+	padding: 8px 0 0 20PX;
 	min-height: 32px;
 }
 // 手机端

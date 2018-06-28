@@ -13,8 +13,11 @@
                 <div id='mobilesuggest' class="mobileac_results"></div>
             </div>
             <div class="collapse navbar-collapse">
+                <ul class="en-zh" style="float: right;margin-top: 10px">
+                    <li id="nav_toggle" style="width: 80px;text-align: center;margin-right: 10px"> <a href="{:U('')}?lang=ch-cn{$commom_field}" class=" nav_toggle {$Think.lang.languagesclicks}" style="display: inline;float: left;">中文</a>| <a href="{:U('')}?lang=en-us{$commom_field}" class="nav_toggle {$Think.lang.languagesclick}" style="display: inline;float: right;">EN</a> </li>
+                </ul>
                 <ul class="nav navbar-nav navbar-left top-nav">
-                    <li id="nav_toggle" style="line-height: 60px;width: 140px;text-align: center;margin-right: 10px"> <a href="{:U('')}?lang=ch-cn{$commom_field}" class=" nav_toggle {$Think.lang.languagesclicks}" style="display: inline;float: left;">中文</a>| <a href="{:U('')}?lang=en-us{$commom_field}" class="nav_toggle {$Think.lang.languagesclick}" style="display: inline;float: right;">EN</a> </li>
+                    <li class="nav-en-zh" id="nav_toggle" style="line-height: 60px;width: 100px;text-align: center;margin-right: 10px;display: none;"> <a href="{:U('')}?lang=ch-cn{$commom_field}" class=" nav_toggle {$Think.lang.languagesclicks}" style="display: inline;float: left;padding: 10px 0 10px 25px;">中文</a>| <a href="{:U('')}?lang=en-us{$commom_field}" class="nav_toggle {$Think.lang.languagesclick}" style="display: inline;float: right;padding: 10px 0;">EN</a> </li>
                     <li <if condition="$style_change eq Index">class="active"</if>> <a href="{:U('Index/Index')}" class="China">              {$Think.lang.head_index}              <span class="sr-only">(current)</span>            </a> </li>
                     <li class="dropdown "> <a class="dropdown-toggle China hidden-xs" data-toggle="dropdown" href="{:U('Rflinker/Index')}">{$Think.lang.title_Product}</a>
                         <ul class="dropdown-menu" id="dropdown">
