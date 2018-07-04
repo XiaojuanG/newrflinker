@@ -112,7 +112,7 @@ class ProductdetailsController extends ComController {
 			
 		
 		}
-		print_r($hztype_arr);exit;
+		//print_r($hztype_arr);exit;
 		$this -> assign('hztype_arr',$hztype_arr);
 		
 		
