@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/index.css" />
     <!-- 联系我们 -->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/contact_us.css">
-    <!--[if lt IE 9]>           <script type="text/javascript" src="__PUBLIC__/qiantai/js/html5shiv.min.js"></script>           <script type="text/javascript" src="__PUBLIC__/qiantai/js/respond.min.js"></script>     <![endif]-->
+    <!--[if lt IE 9]>			<script type="text/javascript" src="__PUBLIC__/qiantai/js/html5shiv.min.js"></script>			<script type="text/javascript" src="__PUBLIC__/qiantai/js/respond.min.js"></script>	    <![endif]-->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/media.css" />
     <!-- new css by wys -->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/new.css" />
@@ -26,38 +26,35 @@
     <!-- 搜索预览插件样式-->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/qiantai/css/search_demo.css">
     <style type="text/css">
-    .descript {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 5;
-        line-height: 20px;
+    .descript{
+      text-overflow:ellipsis; 
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      line-height: 20px;
     }
-
-    .thumbnail-industry {
+    .thumbnail-industry{
         box-shadow: 3px 1px 10px #c7c4c4;
     }
-
-    .common-title {
+    .common-title{
         padding: 20px 15px;
     }
-
-    .common-title h2 {
+    .common-title h2{
         margin-bottom: 20px;
     }
-
-    @media (max-width: 768px) {
-        .carousel-inner .item img {
+    @media (max-width: 768px){
+        .carousel-inner .item img{
             height: 100%;
             width: 100%;
         }
     }
-    </style>
+    
+    </style> 
 </head>
 
 <body>
-    <!-- <main class="max-width-index"> -->
+    <main class="max-width-index">
         <!--加载头部-->
         <include file="Public/header" />
         <!-- ios头部固定框 -->
@@ -77,16 +74,17 @@
                             <div class="item active">
                                 <else/>
                                 <div class="item">
+
                         </if> <img style="width: 100%" src="__ROOT__{$val['flashviewpc']}" alt="">
                         <div class="banner-text">
                             <div class="banner-text-demo" style="padding-top:16% ">
-                                <p>{$val['name']}<span>{$val['title']}</span> </p> <a href="{$val['fwlink']}" type="button" class="font-btn-a">{$Think.lang.Buy_Now}</a>
+                            <p>{$val['name']}<span>{$val['title']}</span> </p> <a href="{$val['fwlink']}" type="button" class="font-btn-a">{$Think.lang.Buy_Now}</a>
                             </div>
-                        </div>
+                         </div>
                         </div>
                     </volist>
                     </div>
-                    <!-- 左右控制箭头 --><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">                       <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>                      <span class="sr-only">Previous</span>                   </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>                      <span class="sr-only">Next</span>                   </a> </div>
+                    <!-- 左右控制箭头 --><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">						<span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>						<span class="sr-only">Previous</span>					</a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>						<span class="sr-only">Next</span>					</a> </div>
                 <!--产品展示-->
                 <div class="news">
                     <div class="container">
@@ -95,7 +93,8 @@
                                 <h2>{$Think.lang.index_Recommend}</h2> </div>
                             <volist name="felghzs" id="val">
                                 <div class="col-lg-4 col-md-4 col-sm-4" style="padding:5px 50px">
-                                    <div class="thumbnail"> <a href="{:U('Feighztype/Index')}?typeid={$val['typeid']}&fid={$val['id']}">                                                <img src="__ROOT__{$val['fghzimg']}" alt="" class="img-responsive">                                             <p class="font-p-lf">{$val['fghz']}<span class="font-span">{$val['fghztitle']}</span></p>                                           </a> </div>
+
+                                    <div class="thumbnail"> <a href="{:U('Feighztype/index')}?typeid={$val['typeid']}&fid={$val['id']}">												<img src="__ROOT__{$val['fghzimg']}" alt="" class="img-responsive">												<p class="font-p-lf">{$val['fghz']}<span class="font-span">{$val['fghztitle']}</span></p>											</a> </div>
                                 </div>
                             </volist>
                         </div>
@@ -109,7 +108,7 @@
                                 <h2>{$Think.lang.index_Industry}</h2> </div>
                             <volist name="iyimg" id="vo">
                                 <div class="col-lg-3 col-md-3 col-sm-4 " style="padding: 20px">
-                                    <div class="thumbnail thumbnail-industry "> <a href="{:U('Vocationlistmain/index')}?id={$vo['id']}">                                           <img src="__ROOT__{$vo['imgiy']}" alt=""  class="img-responsive" />                                      </a>
+                                    <div class="thumbnail thumbnail-industry "> <a href="{:U('Vocationlistmain/index')}?id={$vo['id']}">										   <img src="__ROOT__{$vo['imgiy']}" alt=""  class="img-responsive" />										</a>
                                         <div class="caption hidden-xs">
                                             <h4 style="margin-top:2px"><a style="color:#4767f4" href="{:U('Vocationlistmain/index')}?id={$vo['id']}">{$vo['nameiy']}</a></h4>
                                             <p class="descript" style="    height: 100px;font-size: 13px; "> {$vo['title']}</p>
@@ -125,8 +124,10 @@
                 </div>
                 <!--加载底部-->
                 <include file="Public/footer" />
-            </div>
-    <!-- </main> -->
-</body>
+                </div>
+</main>
+
+    
+                </body>
 
 </html>
