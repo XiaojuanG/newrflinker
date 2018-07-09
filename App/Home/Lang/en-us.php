@@ -13,6 +13,18 @@ return array(
    'languagesclick' => 'on',
    'languagesclicks' => '',
 
+
+   //菜单——行业列表
+  'menu_Industries' => 'Industries',
+  'menu_Medical_Industry' => 'Medical Industry',
+  'menu_Jewelry_Industry' => 'Jewelry Industry',
+  'menu_Library' => 'Library',
+
+
+
+
+
+
    //页面title
    'title_Index' => 'Index',
    'title_Product' => 'Product',
@@ -56,7 +68,7 @@ return array(
     'company-visio' => 'Company visio',
 
   //行业详情
-    'index_Industryinfo_download' => 'Public Download',
+    'index_Industryinfo_download' => 'Classic Case',
 
   //联系我们
   'index_FormTitle' => 'CONTACT US',

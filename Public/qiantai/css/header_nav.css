@@ -84,6 +84,21 @@ textarea{resize:none;}
 .dropdown .dropdown-menu .nav-dropdown-menu-li{
     text-align: left;padding: 10px;
     }
+.header-glyphicon{
+	float: right;
+	height: 39px;
+    line-height: 39px;
+    float: right;
+    border: 1px solid;
+    border-left: none;
+    left: 0px;
+    top: 15px;
+    width: 30px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    background: #f9f9f9;
+    cursor: pointer;
+}
 
 
 

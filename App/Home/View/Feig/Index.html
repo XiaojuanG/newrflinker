@@ -83,7 +83,7 @@
                                     </a>
                                 </h4>
                             </div>
-                            <div id="{$vo['type']['fgtypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$j eq 1'>in<else/></if>">
+                            <div id="{$vo['type']['fgtypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$j gt 0'>in<else/></if>">
                                 <div class="product-banner swiper-container typeswiper{$vo['type']['id']}">
                                     <div class="swiper-wrapper">
                                         <volist name="vo['pt']" id="pt">

@@ -19,7 +19,7 @@
                 <ul class="nav navbar-nav navbar-left top-nav">
                     <li class="nav-en-zh" id="nav_toggle" style="line-height: 60px;width: 100px;text-align: center;margin-right: 10px;display: none;"> <a href="{:U('')}?lang=ch-cn{$commom_field}" class=" nav_toggle {$Think.lang.languagesclicks}" style="display: inline;float: left;padding: 10px 0 10px 25px;">中文</a>| <a href="{:U('')}?lang=en-us{$commom_field}" class="nav_toggle {$Think.lang.languagesclick}" style="display: inline;float: right;padding: 10px 0;">EN</a> </li>
                     <li <if condition="$style_change eq Index">class="active"</if>> <a href="{:U('Index/Index')}" class="China">              {$Think.lang.head_index}              <span class="sr-only">(current)</span>            </a> </li>
-                    <li class="dropdown "> <a class="dropdown-toggle China hidden-xs" data-toggle="dropdown" href="{:U('Rflinker/Index')}">{$Think.lang.title_Product}</a>
+                    <li class="dropdown "> <a class="dropdown-toggle China hidden-xs" href="{:U('Feig/Index')}">{$Think.lang.title_Product}</a>
                         <ul class="dropdown-menu" id="dropdown">
                              <li><a class="nav-dropdown-menu-li" href="{:U('Feig/Index')}">FEIG</a></li>
                             <li><a class="nav-dropdown-menu-li" href="{:U('Rflinker/Index')}">RFLinker</a></li>
@@ -27,16 +27,29 @@
                     </li>
                     <li class="visible-xs China"><a href="{:U('Rflinker/Index')}">Rflinker</a></li>
                     <li class="visible-xs China"><a href="{:U('Feig/Index')}">Feig</a></li>
-                    <li <if condition="$style_change eq Vocationlist">class="active"</if>> <a class="China" href="{:U('Vocationlist/Index')}">{$Think.lang.head_Industry}</a> </li>
+                    <!--  -->
+                    <li class="dropdown "> <a class="dropdown-toggle China hidden-xs" href="{:U('Vocationlist/Index')}">{$Think.lang.head_Industry}</a>
+                        <ul class="dropdown-menu" id="dropdown">
+                            <li><a class="nav-dropdown-menu-li" href="{:U('Vocationlistmain/Index')}?id=12"> 
+                            {$Think.lang.menu_Industries}</a></li>
+                            <li><a class="nav-dropdown-menu-li" href="{:U('Vocationlistmain/Index')}?id=19">{$Think.lang.menu_Medical_Industry}</a></li>
+                            <li><a class="nav-dropdown-menu-li" href="{:U('Vocationlistmain/Index')}?id=13">{$Think.lang.menu_Jewelry_Industry}</a></li>
+                            <li><a class="nav-dropdown-menu-li" href="{:U('Vocationlistmain/Index')}?id=20">{$Think.lang.menu_Library}</a></li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <!-- <li <if condition="$style_change eq Vocationlist">class="active"</if>> 
+                        <a class="China" href="{:U('Vocationlist/Index')}">{$Think.lang.head_Industry}</a>
+                         </li> -->
                     <li <if condition="$style_change eq Codeinput">class="active"</if>> <a class="China" href="{:U('Codeinput/Index')}">{$Think.lang.head_support}</a> </li>
                     <li <if condition="$style_change eq Aboutus">class="active"</if>> <a class="China" href="{:U('Aboutus/Index')}">{$Think.lang.head_about}</a> </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right top-nav" style="width: 300px;">
-                    <li class="search_c hidden-sm hidden-xs"> <a href="#">{$Think.lang.head_search} <i class="glyphicon glyphicon-search"></i></a> </li>
+                <ul class="nav navbar-nav navbar-right top-nav" style="width: 300px; height: 60px">
                     <form class="hidden-sm hidden-xs">
-                        <input style="font-size:13px;" placeholder="{$Think.lang.head_search_select}" type="text" name="arrcity" id="arrcity" class="form-control search" />
-                        <div id='suggest' class="ac_results"></div>
+                        <input style="font-size:13px;width: 90%;border:1px solid;padding: 10px" placeholder="{$Think.lang.head_search_select}" type="text" name="arrcity" id="arrcity" class="form-control search" />
+                        <div id='suggest' class="ac_results" style="top: 54px"></div>
                     </form>
+                    <i class="glyphicon glyphicon-search header-glyphicon"></i>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -25,6 +25,8 @@ class VocationlistController extends ComController {
         $selectiy = "id,".$language."imgiy as imgiy,iysort,".$language."nameiy as nameiy,".$language."title as title";
         $iyimg = $industry->order('iysort')->limit(4)->getField($selectiy);
         $this->assign('iyimg',$iyimg);
+
+        
       //print_r($iyimg);exit;
 
 		$this -> display();	

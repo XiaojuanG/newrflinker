@@ -12,6 +12,15 @@ return array(
     'languagesclick' => '',
     'languagesclicks' => 'on',
 
+
+  //菜单——行业列表
+  'menu_Industries' => '工业行业',
+  'menu_Medical_Industry' => '医疗行业',
+  'menu_Jewelry_Industry' => '珠宝行业',
+  'menu_Library' => '图书馆',
+
+
+
    //页面title
    'title_Index' => '首页',
    'title_Product' => '产品',

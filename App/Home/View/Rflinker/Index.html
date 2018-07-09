@@ -100,7 +100,7 @@
 									</a>
 								</h4>
 							</div>
-							<div id="{$vo['type']['rflinkertypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$vo["ptcount"] gt 0 and $j eq 1'>in<else/></if>">
+							<div id="{$vo['type']['rflinkertypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$vo["ptcount"] gt 0 and $j gt 0'>in<else/></if>">
 									<div class="product-banner swiper-container typeswiper{$vo['type']['id']}">
 												<div class="swiper-wrapper">
 												    
