@@ -138,8 +138,8 @@
        
 	        var swiper = new Swiper('.typeswiper{$vo[\'type\'][\'id\']}', { 
 	        	slidesPerView:{$vo['ptcount']},
-      			spaceBetween: {$vo['size']},
-//      			slidesPerGroup: 3,                     
+      			spaceBetween:{$vo['size']},
+   			slidesPerGroup:{$vo['ptcount']},                     
 	            breakpoints:{
 	          //   	1400: {
 			        //   slidesPerView: 4,
@@ -152,14 +152,17 @@
                                 800:{
 			          slidesPerView: 2,
 			          spaceBetween: -100,
+                                  slidesPerGroup:2, 
 			        },
 			        700: {
 			          slidesPerView: 2,
 			          spaceBetween: -70,
+                                  slidesPerGroup:2, 
 			        },
 			        480: {
 			          slidesPerView: 1,
 			          spaceBetween: 10,
+                                  slidesPerGroup:1, 
 			        }
 
 	            },
