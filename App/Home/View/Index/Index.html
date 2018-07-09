@@ -74,7 +74,8 @@
                             <div class="item active">
                                 <else/>
                                 <div class="item">
-                        </if> <img src="__ROOT__{$val['flashviewpc']}" alt="">
+
+                        </if> <img style="width: 100%" src="__ROOT__{$val['flashviewpc']}" alt="">
                         <div class="banner-text">
                             <div class="banner-text-demo" style="padding-top:16% ">
                             <p>{$val['name']}<span>{$val['title']}</span> </p> <a href="{$val['fwlink']}" type="button" class="font-btn-a">{$Think.lang.Buy_Now}</a>
@@ -92,6 +93,7 @@
                                 <h2>{$Think.lang.index_Recommend}</h2> </div>
                             <volist name="felghzs" id="val">
                                 <div class="col-lg-4 col-md-4 col-sm-4" style="padding:5px 50px">
+
                                     <div class="thumbnail"> <a href="{:U('Feighztype/index')}?typeid={$val['typeid']}&fid={$val['id']}">												<img src="__ROOT__{$val['fghzimg']}" alt="" class="img-responsive">												<p class="font-p-lf">{$val['fghz']}<span class="font-span">{$val['fghztitle']}</span></p>											</a> </div>
                                 </div>
                             </volist>
