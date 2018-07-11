@@ -12,12 +12,12 @@
     background-color: rgb(0,0,0,.5);
 }
 .banner-text p{
-	font-size: 28px;color: #fff;padding: 5px;
+	font-size: 24px;font-weight: 700;color: #fff;padding: 5px;
 }
-.banner-text p span{font-size: 20px; color: #fff;display: block;
+.banner-text p span{font-size: 14px;font-style: italic;font-weight: normal; color: #fff;display: block;
 }
 .font-btn-a{
-	font-size: 26px;color: #fff;background-color: #2f9ded;padding: 5px 30px;display: inline-block;margin: 0 0 10px;
+	font-size: 24px;color: #fff;background-color: #2f9ded;padding: 5px 30px;display: inline-block;margin: 0 0 10px;
 }
 /*--------------------banner结束-------------------------*/
 

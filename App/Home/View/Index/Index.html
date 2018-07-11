@@ -54,7 +54,7 @@
 </head>
 
 <body>
-    <main class="max-width-index">
+   
         <!--加载头部-->
         <include file="Public/header" />
         <!-- ios头部固定框 -->
@@ -84,22 +84,124 @@
                         </div>
                     </volist>
                     </div>
-                    <!-- 左右控制箭头 --><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">						<span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>						<span class="sr-only">Previous</span>					</a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>						<span class="sr-only">Next</span>					</a> </div>
-                <!--产品展示-->
-                <div class="news">
-                    <div class="container">
-                        <div class="row news-content">
-                            <div class="common-title">
-                                <h2>{$Think.lang.index_Recommend}</h2> </div>
-                            <volist name="felghzs" id="val">
-                                <div class="col-lg-4 col-md-4 col-sm-4" style="padding:5px 50px">
-
-                                    <div class="thumbnail"> <a href="{:U('Feighztype/index')}?typeid={$val['typeid']}&fid={$val['id']}">												<img src="__ROOT__{$val['fghzimg']}" alt="" class="img-responsive">												<p class="font-p-lf">{$val['fghz']}<span class="font-span">{$val['fghztitle']}</span></p>											</a> </div>
-                                </div>
-                            </volist>
-                        </div>
-                    </div>
+                    <!-- 左右控制箭头 --><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">						<span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>						<span class="sr-only">Previous</span>					</a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>						<span class="sr-only">Next</span>					</a> 
                 </div>
+            <main class="max-width-index">
+                <!--FEIG-->
+                <if condition="$indexshowlist.fghzshow eq 1 ">
+                        <div class="news">
+                            <div class="container">
+                                <div class="row news-content">
+                                    <div class="common-title">
+                                        <img src="__PUBLIC__/qiantai/img/FEIG_Logo.png">
+                                        <h2 style="margin-top: 20px;">{$indexshowlist.fghzname}</h2> 
+                                    </div>
+                                    <volist name="felghzs" id="val">
+                                        <div class="col-lg-4 col-md-4 col-sm-4" style="padding:5px 50px">
+
+                                            <div class="thumbnail"> <a href="{:U('Feighztype/Index')}?typeid={$val['typeid']}&fid={$val['id']}">                                                <img src="__ROOT__{$val['fghzimg']}" alt="" class="img-responsive">                                             <p class="font-p-lf">{$val['fghz']}<span class="font-span">{$val['fghztitle']}</span></p>                                           </a> </div>
+                                        </div>
+                                    </volist>
+                                </div>
+                            </div>
+                        </div>
+                 <else />
+                 </if>
+
+
+               
+
+                <!--RFLINKER-->
+                <if condition="$indexshowlist.rrhzshow eq 1 ">
+                        <div class="news">
+                            <div class="container">
+                                <div class="row news-content">
+                                    <div class="common-title">
+                                        <img src="__PUBLIC__/qiantai/img/RFlinker_Logo.png">
+                                        <h2 style="margin-top: 20px;">{$indexshowlist.rrhzname}</h2> 
+                                    </div>
+                                    <volist name="felghzs" id="val">
+                                        <div class="col-lg-4 col-md-4 col-sm-4" style="padding:5px 50px">
+
+                                            <div class="thumbnail"> <a href="{:U('Rflinkerhztype/Index')}?typeid={$val['typeid']}&fid={$val['id']}">                                                <img src="__ROOT__{$val['rrimg']}" alt="" class="img-responsive">                                             <p class="font-p-lf">{$val['rflinkerhz']}<span class="font-span">{$val['rrtitle']}</span></p>                                           </a> </div>
+                                        </div>
+                                    </volist>
+                                </div>
+                            </div>
+                        </div>
+                 <else />
+                 </if>
+
+
+
+
+
+
+
+
+
+                <!--推荐产品-->
+                <if condition="$indexshowlist.tjhzshow eq 1 ">
+                        <div class="news">
+                            <div class="container">
+                                <div class="row news-content">
+                                    <div class="common-title">
+                                        <h1 style="font-size: 26px;">{$Think.lang.index_Recommend}</h1>
+                                        <h2 style="margin-top: 20px;">{$Think.lang.tjhzname}</h2> </div>
+                                    <volist name="tuijians" id="val">
+                                        <if condition="$val['type'] eq 1">
+                                                <div class="col-lg-4 col-md-4 col-sm-4" style="padding:5px 50px">
+
+                                                    <div class="thumbnail"> <a href="{:U('Productdetails/Index')}?type=1&&id={$val['id']}">												<img src="__ROOT__{$val['ptimg']}" alt="" class="img-responsive">												<p class="font-p-lf">{$val['felgname']}<span class="font-span">{$val['fttitle']}</span></p>											</a> </div>
+                                                </div>
+                                        </if>
+                                    </volist>
+                                </div>
+                            </div>
+                        </div>
+                <else />
+                </if>
+
+
+
+
+                <!--推荐产品 -->
+ <!-- <if condition="$indexshowlist.tjhzshow eq 1 ">
+ <section id="team" class="team-index">
+    <div class="container">
+      <div class="section-title">
+        <h2>{$Think.lang.index_Recommend}</h2>
+        <p>{$indexshowlist.tjhzname}</p>
+      </div>
+      <volist name="tuijians" id="val">
+                  <if condition="$val['type'] eq 1">
+                          <a href="{:U('Productdetails/Index')}?type=1&&id={$val['id']}">
+                                  <div class="col-md-3 col-sm-6">
+                                            <div class="team animated" data-animation="fadeInUp" data-animation-delay="0">
+                                                  <div class="team-photo">
+                                                        <img src="__ROOT__{$val['ftimg']}" alt="">
+                                                  </div>
+                                                <div class="team-info">
+                                                      <h4>{$val['ftname']}</h4>
+                                                      <p>{$val['fttitle']}</p>
+                                                  </div>
+                                            </div>
+                                  </div>
+                          </a>
+                   </if>
+    </volist>
+    </div>
+  </section>
+     <else />
+</if> -->
+
+
+
+
+
+
+
+
                 <!--行业应用-->
                 <div class="product">
                     <div class="container">
@@ -110,7 +212,7 @@
                                 <div class="col-lg-3 col-md-3 col-sm-4 " style="padding: 20px">
                                     <div class="thumbnail thumbnail-industry "> <a href="{:U('Vocationlistmain/index')}?id={$vo['id']}">										   <img src="__ROOT__{$vo['imgiy']}" alt=""  class="img-responsive" />										</a>
                                         <div class="caption hidden-xs">
-                                            <h4 style="margin-top:2px"><a style="color:#4767f4" href="{:U('Vocationlistmain/index')}?id={$vo['id']}">{$vo['nameiy']}</a></h4>
+                                            <h4 style="margin-top:2px"><a style="color:#4767f4;font-size: 15px;font-weight: 700;" href="{:U('Vocationlistmain/index')}?id={$vo['id']}">{$vo['nameiy']}</a></h4>
                                             <p class="descript" style="    height: 100px;font-size: 13px; "> {$vo['title']}</p>
                                             <div class="trade" style="border-top: 1px solid #eee;">
                                                 <p><a href=""></a></p>
