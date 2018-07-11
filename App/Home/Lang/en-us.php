@@ -133,7 +133,7 @@ return array(
   'supportservices_dowuserpwd' => 'password',
   'supportservices_dowusernameerror' => 'User Name Error',
   'supportservices_dowuserpwderror' => 'Wrong Password',
-  
+  'vip_down' => 'VIP Down',
   
   
 

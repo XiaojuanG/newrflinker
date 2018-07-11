@@ -18,7 +18,6 @@ class IndexController extends ComController {
 		.$language."tjhzname as tjhzname,"
 		.$language."tjhzshow as tjhzshow";
 		$indexshowlist = $Indexshow->field($indexshowwhere)->find();
-		
 		$this -> assign('indexshowlist',$indexshowlist);
 
 		
@@ -47,26 +46,28 @@ class IndexController extends ComController {
 				$felghzs[$key]['typeid'] = $v['id'];
 			}
 			
-			
 		}
 		
 		$this->assign('felghzs',$felghzs);
 		
 		
-		//rflinker产品
-		$rflinkerhz = M('rflinkerhz');
-		$selectrrhz="id,".$language."rflinkerhz as rflinkerhz,".$language."rrtitle as rrtitle,".$language."rrimg as rrimg,rrsort";
-		$rrzs = $rflinkerhz->order('rrsort')->limit(4)->getField($selectrrhz);
-		$this->assign('rrzs',$rrzs);
-		//print_r($rrzs);exit;
+		//rflinker产品  rflinkerhz
+		$rt = M("rflinkerproduct")->select();
+
+		$Model = new \Think\Model();
+		$rflinker_select = "t.id as typeid,hz.id as fid,rt.id as id,rt.".$language."rrimg as rrimg,hz.".$language."rflinkerhz as rflinkerhz,t.".$language."rflinkertypename as rflinkertypename";
+		$rflinker_list = $Model->query("select $rflinker_select from qw_rflinkerproduct as rt inner join qw_rflinkerhz as hz on rt.en_hzid = hz.id inner join qw_rflinkertype as t on rt.en_tid = t.id limit 3");
+		//print_r($rflinker_list);exit;	
+		$this->assign('rflinker_list',$rflinker_list);
 		
-		//推荐产品
-		$tuijian = M('tuijian');
-		$tuijianselect = "id,".$language."felgname as felgname,".$language."rrname as rrname,type,tjsotr";
-		$tuijians = $tuijian->order('tjsotr')->getField($tuijianselect);
-		//print_r($tuijians);exit;
 		
+		//推荐产品   ptimg
+		$tuijianselect="t.id as typeid,hz.id as fid,felg.id as id,felg.".$language."ftimg as img,hz.".$language."fghz as fghz,t.".$language."fgtypename as fgtypename";
+		$tuijians = $Model->query("select $tuijianselect from qw_felgproduct as felg  inner join qw_felghz as hz on felg.cn_hzid = hz.id inner join qw_felgtype as t on felg.cn_tid = t.id where felg.`search`= 1 order by felg.id asc limit 3");
+		/* print_r($tuijians);exit; */
 		$this -> assign('tuijians',$tuijians);
+
+
 
 		//行业应用
 		$industry = M('industry');

@@ -133,6 +133,7 @@ return array(
   'supportservices_dowuserpwd' => '密码',
   'supportservices_dowusernameerror' => '用户名错误',
   'supportservices_dowuserpwderror' => '密码错误',
+  'vip_down' => 'VIP下载',
   
   
   
