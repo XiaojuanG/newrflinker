@@ -101,6 +101,48 @@
                 </div>
             </div>
         </div>
+        <div class="news">
+            <div class="container">
+                <div class="row news-content">
+				    <if condition="$yingchang neq 1">
+						<div class="common-title">
+							<h2 style="margin-top: 20px;">{$Think.lang.Matching_product}</h2> 
+						</div>
+					<else/></if>
+					
+					<volist name="mfelg" id="vo">
+					            
+								<div class="col-lg-3 col-md-3 col-sm-3" style="padding:10px">
+									<div class="thumbnail"> <a href="{:U('Productdetails/index')}?type=1&&id={$vo['id']}">
+										<img src="__ROOT__{$vo['ftimg']}" alt="" class="img-responsive">                                             
+									<p class="font-p-lf">{$vo['ftname']}<span class="font-span">{$vo['fttitle']}</span></p>                                           
+									</a></div>
+								</div>
+							
+					</volist>
+					
+					
+                    <!-- <div class="col-lg-3 col-md-3 col-sm-3" style="padding:10px">
+                        <div class="thumbnail"> <a href="">
+                            <img src="__PUBLIC__/qiantai/img/product3.jpg" alt="" class="img-responsive">                                             
+                        <p class="font-p-lf">hahahhahah<span class="font-span">123123123</span></p>                                           
+                        </a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding:10px">
+                        <div class="thumbnail"> <a href="">
+                            <img src="__PUBLIC__/qiantai/img/product3.jpg" alt="" class="img-responsive">                                             
+                        <p class="font-p-lf">hahahhahah<span class="font-span">123123123</span></p>                                           
+                        </a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding:10px">
+                        <div class="thumbnail"> <a href="">
+                            <img src="__PUBLIC__/qiantai/img/product3.jpg" alt="" class="img-responsive">                                             
+                        <p class="font-p-lf">hahahhahah<span class="font-span">123123123</span></p>                                           
+                        </a></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
         <footer class="col-xs-12" style="padding: 0">
     <div class="footer">
         <div class="font-footer"><a href="http://www.miitbeian.gov.cn" style="color: #666">{$Think.lang.ICPname}</a></div>

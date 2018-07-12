@@ -76,15 +76,13 @@
             </div>
             <!--产品展示结束-->
             <div class="details container" style="margin:auto;margin-left:0;margin-right:0;padding:0;">
-                <!-- <div class="panel-group" id="accordion"> -->
-                    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-                        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-                    <!-- <script type="text/javascript" src="__PUBLIC__/qiantai/search_demo/jquery.min.js"></script> -->
+                    <script type="text/javascript" src="__PUBLIC__/qiantai/js/jquery.js"></script>
+                    <script type="text/javascript" src="__PUBLIC__/qiantai/js/bootstrap.min.js"></script>
                         <script type="text/javascript" src="__PUBLIC__/qiantai/swiper/swiper.min.js"></script>
                     <volist name="hztypes_arr" id="vo" key="j">
                         <div  data-toggle="collapse" data-target="#demo{$vo['type']['id']}">
                             <h4 class="panel-title text-center">
-                                    <a data-toggle="collapse" name="list{$voer['id']}" id="list{$voer['id']}" data-parent="#accordion" 
+                                    <a data-toggle="collapse" name="list{$vo['type']['id']}" id="list{$vo['type']['id']}" data-parent="#accordion" 
                                        href="#{$vo['type']['fgtypename']|str_replace=' ','',###}">
                                          {$vo['type']['fgtypename']} 
                                     </a>
@@ -113,38 +111,9 @@
                                 </div>
                             </div>       
                         </div>
-
-
-                           <!--  <div id="{$vo['type']['fgtypename']|str_replace=' ','',###}" class="panel-collapse collapse <if condition='$j gt 0'>in<else/></if>">
-                                <div class="product-banner swiper-container typeswiper{$vo['type']['id']}">
-                                    <div class="swiper-wrapper">
-                                        <volist name="vo['pt']" id="pt">
-                                            <div class="swiper-slide">
-                                                <a href="projectDeta.html">
-                                                    <div class="product-img">
-                                                        <a target="_top" href="{:U('Productdetails/index')}?type=1&&id={$pt['id']}"><img src="__ROOT__{$pt['ftimg']}" alt="product"/></a>
-                                                    </div>
-                                                </a>
-                                                <a href="projectDeta.html">
-                                                    <div class="product-text">
-                                                        <a target="_top" href="{:U('Productdetails/index')}?type=1&&id={$pt['id']}"><span class="span-id-title">{$pt['ftname']}<i class="icon iconfont icon-fanhuiyou""></i></span></a>
-                                                        <div>{$pt['ftitle']}</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </volist>
-                                    </div>
-                                    
-                                    <div class="swiper-pagination type-pagination{$vo['type']['id']}"></div>
-                                    <div class="swiper-button-prev type-prev{$vo['type']['id']}"></div>
-                                    <div class="swiper-button-next type-next{$vo['type']['id']}"></div>
-                                </div>
-                            </div> -->
                         
                         
-                         <script type="text/javascript">
-    	
-
+        <script type="text/javascript">
     	// 轮播
 	        var swiper = new Swiper('.typeswiper{$vo[\'type\'][\'id\']}', { 
 	        	slidesPerView:{$vo['ptcount']},

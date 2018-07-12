@@ -106,7 +106,8 @@ return array(
   'vocationlist_jiazai' => 'To Load More',
   'vocationlist_jiazaimei' => 'Had Hurt No More',
 
-
+  //产品详情
+  'Matching_product' => 'Matching Product',
 
 
    //行业详情

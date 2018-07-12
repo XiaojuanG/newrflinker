@@ -125,6 +125,9 @@ return array(
   'felg_rflinker' => 'RFLINKER 系列产品',
   'felg_hztext' => '按频率分类',
   'felg_typetext' => '按类型分类',
+  
+  //产品详情
+  'Matching_product' => '匹配产品',
 
 
    //支持cdk

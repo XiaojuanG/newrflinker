@@ -68,7 +68,7 @@ class ProductdetailsController extends ComController {
 				$mfelg=$felgproduct->table('__FELGPRODUCT__ f')->join("
 						__MATCHING__ m on $on
 					   ")
-					 -> where($mwhere)->field($mselect)->select();
+					 -> where($mwhere)->field($mselect)->limit(4)->select();
 
 
                 //判断产品匹配是否为空，为空则隐藏
